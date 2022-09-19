@@ -53,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textViewHide"
         android:layout_alignBottom="@+id/textViewHide"
-        android:layout_toRightOf="@+id/textViewHide"
+        android:layout_toEndOf="@+id/textViewHide"
         android:onClick="onHideButtonClick"
         android:text="@string/hide_google" />
 
@@ -63,19 +63,27 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/checkBoxHideGoogle"
         android:layout_alignBottom="@+id/checkBoxHideGoogle"
-        android:layout_toRightOf="@+id/checkBoxHideGoogle"
+        android:layout_toEndOf="@+id/checkBoxHideGoogle"
         android:onClick="onHideButtonClick"
         android:text="@string/hide_android" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:layout_below="@+id/checkBoxHideAndroid"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/search" />
 
     <ListView
         android:id="@+id/appList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="1"
-        android:layout_alignParentStart="true"
         android:layout_above="@+id/buttonNext"
-        android:layout_below="@+id/checkBoxHideGoogle" />
+        android:layout_below="@+id/search"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical" />
 
     <Button
         android:id="@+id/buttonNext"

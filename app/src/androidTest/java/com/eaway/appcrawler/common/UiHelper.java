@@ -55,7 +55,7 @@ public class UiHelper {
         return false;
     }
 
-    public static boolean handleCommonDialog() {
+    public static boolean handleCommonDialog() { // FIXME:
         UiDevice device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         UiObject button = null;
         for (String keyword : Config.COMMON_BUTTONS) {

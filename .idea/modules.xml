@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AppCrawler.iml" filepath="$PROJECT_DIR$/AppCrawler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.iml" filepath="$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/1938291067/AppCrawler.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1243119209/GitHub.AppCrawler.iml" filepath="$PROJECT_DIR$/.idea/modules/1243119209/GitHub.AppCrawler.iml" />
     </modules>
   </component>
 </project>

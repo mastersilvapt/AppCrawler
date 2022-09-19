@@ -91,15 +91,14 @@ public class UiScreen {
         conf.setActionAcknowledgmentTimeout(ActionAcknowledgmentTimeout);
         conf.setScrollAcknowledgmentTimeout(ScrollAcknowledgmentTimeout);
 
-        if (0 != pkg.compareToIgnoreCase(Config.sTargetPackage)) {
+        if (pkg == null || 0 != pkg.compareToIgnoreCase(Config.sTargetPackage)) { // Added pkg == null ||
             return;
         }
 
         // Clickable
         int i = 0;
-        UiObject clickable = null;
+        UiObject clickable;
         do {
-            clickable = null;
             clickable = device.findObject(new UiSelector().clickable(true).instance(i++));
             if (clickable != null && clickable.exists())
                 widgetList.add(new UiWidget(clickable));
@@ -124,18 +123,17 @@ public class UiScreen {
 
     @Override
     public String toString() {
-        // FIXME: Better to use StringBuilder
-        String str = "name:" + name +
+        StringBuilder str = new StringBuilder("name:" + name +
                 ", id:" + id +
                 ", depth:" + depth +
                 ", finished:" + mFinished +
                 ", signature:" + signature +
-                ", widgets:" + widgetList.size();
+                ", widgets:" + widgetList.size());
         for (int i = 0; i < widgetList.size(); i++) {
             UiWidget widget = widgetList.get(i);
-            str += " " + i + ":" + widget.isFinished();
+            str.append(" ").append(i).append(":").append(widget.isFinished());
         }
-        return str;
+        return str.toString();
     }
 
     @Override
@@ -157,7 +155,7 @@ public class UiScreen {
     public void setFinished(boolean finished) {
         mFinished = finished;
 
-        if (mFinished == true) {
+        if (mFinished) {
             for (UiWidget child : widgetList) {
                 child.setFinished(mFinished);
             }
@@ -165,15 +163,15 @@ public class UiScreen {
     }
 
     public boolean isFinished() {
-        if (mFinished == true)
-            return mFinished;
+        if (mFinished)
+            return true;
 
         for (UiWidget child : widgetList) {
             if (!child.isFinished())
                 return false;
         }
         mFinished = true;
-        return mFinished;
+        return true;
     }
 
     private boolean parseSignature(UiObject uiObject) {
