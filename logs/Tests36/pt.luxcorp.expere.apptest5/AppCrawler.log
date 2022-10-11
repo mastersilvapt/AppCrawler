@@ -1,0 +1,14 @@
+10-03 21:12:31.926 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 21:12:31.931 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 21:12:31.933 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest5, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 21:12:31.963 i/AppCrawlerMain: {Press} Home
+10-03 21:12:32.134 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest5
+10-03 21:12:38.766 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:false 1:false 2:false 3:false
+10-03 21:12:39.116 i/AppCrawlerMain: {Screenshot} (0) apptest5.png
+10-03 21:12:39.118 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:12:39.248 i/AppCrawlerMain: {Click} MAIN2 Button [78,665][320,797]
+10-03 21:12:39.743 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 21:12:39.746 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 21:12:40.006 d/AppCrawler: Name: Don't ask again
+10-03 21:12:40.012 d/AppCrawler: Name: Deny
+10-03 21:12:40.019 d/AppCrawler: Name: Allow

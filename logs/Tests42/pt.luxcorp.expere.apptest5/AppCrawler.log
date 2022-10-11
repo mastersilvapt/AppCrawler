@@ -1,0 +1,71 @@
+10-03 21:25:20.998 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 21:25:21.001 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 21:25:21.002 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest5, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 21:25:21.026 i/AppCrawlerMain: {Press} Home
+10-03 21:25:21.189 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest5
+10-03 21:25:27.817 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:false 1:false 2:false 3:false
+10-03 21:25:28.168 i/AppCrawlerMain: {Screenshot} (0) apptest5.png
+10-03 21:25:28.171 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:28.331 i/AppCrawlerMain: {Click} MAIN2 Button [78,665][320,797]
+10-03 21:25:28.879 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 21:25:28.884 v/AppCrawler: {Permission Manager} requesting permissions
+10-03 21:25:29.174 d/AppCrawler: {Permission Manager} Ui Name: Don't ask again
+10-03 21:25:29.198 d/AppCrawler: {Permission Manager} Ui Name: Deny
+10-03 21:25:29.550 d/AppCrawler: {Permission Manager} Ui Name: MAIN4
+10-03 21:25:29.579 d/AppCrawler: {Permission Manager} Ui Name: MAIN5
+10-03 21:25:30.151 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:false 2:false 3:false
+10-03 21:25:30.157 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:30.233 i/AppCrawlerMain: {Click} MAIN3 Button [761,665][1003,797]
+10-03 21:25:30.788 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:false 1:false
+10-03 21:25:31.259 i/AppCrawlerMain: {Screenshot} (1) apptest5.png
+10-03 21:25:31.262 d/AppCrawlerDebug: Marking Screen apptest5 with depth 2 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button; as not finished
+10-03 21:25:31.263 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:31.403 i/AppCrawlerMain: {Click} MAIN6 Button [419,665][661,797]
+10-03 21:25:31.887 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:3, depth:3, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;TextView;, widgets:0
+10-03 21:25:32.405 i/AppCrawlerMain: {Screenshot} (2) apptest5.png
+10-03 21:25:32.757 i/AppCrawlerMain: {Click} Back
+10-03 21:25:33.217 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:true 1:false
+10-03 21:25:33.225 d/AppCrawlerDebug: Marking Screen apptest5 with depth 2 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button; as not finished
+10-03 21:25:33.230 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:33.332 i/AppCrawlerMain: {Click} MAIN7 Button [419,1693][661,1825]
+10-03 21:25:34.157 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:4, depth:3, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;, widgets:1 0:false
+10-03 21:25:34.420 i/AppCrawlerMain: {Screenshot} (3) apptest5.png
+10-03 21:25:34.422 d/AppCrawlerDebug: Marking Screen apptest5 with depth 3 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView; as not finished
+10-03 21:25:34.423 d/AppCrawlerDebug: Marking Screen apptest5 with depth 2 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button; as not finished
+10-03 21:25:34.424 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:34.504 i/AppCrawlerMain: {Click} MAIN9 Button [419,665][661,797]
+10-03 21:25:35.415 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:5, depth:4, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;ImageView;TextView;ImageView;, widgets:0
+10-03 21:25:35.664 i/AppCrawlerMain: {Screenshot} (4) apptest5.png
+10-03 21:25:36.059 i/AppCrawlerMain: {Click} Back
+10-03 21:25:36.427 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:4, depth:3, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;, widgets:1 0:true
+10-03 21:25:36.764 i/AppCrawlerMain: {Click} Back
+10-03 21:25:37.136 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:2, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:true 1:true
+10-03 21:25:37.576 i/AppCrawlerMain: {Click} Back
+10-03 21:25:38.148 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:true 2:false 3:false
+10-03 21:25:38.154 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:38.237 i/AppCrawlerMain: {Click} MAIN4 Button [78,1693][320,1825]
+10-03 21:25:38.751 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:6, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;TextView;ImageView;, widgets:0
+10-03 21:25:39.333 i/AppCrawlerMain: {Screenshot} (5) apptest5.png
+10-03 21:25:39.696 i/AppCrawlerMain: {Click} Back
+10-03 21:25:40.312 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:true 2:true 3:false
+10-03 21:25:40.320 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:40.434 i/AppCrawlerMain: {Click} MAIN5 Button [761,1693][1003,1825]
+10-03 21:25:41.377 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:7, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button;, widgets:2 0:false 1:false
+10-03 21:25:41.657 i/AppCrawlerMain: {Screenshot} (6) apptest5.png
+10-03 21:25:41.661 d/AppCrawlerDebug: Marking Screen apptest5 with depth 2 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button; as not finished
+10-03 21:25:41.662 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:41.769 i/AppCrawlerMain: {Click} MAIN7 Button [419,665][661,797]
+10-03 21:25:42.256 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:4, depth:3, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;, widgets:1 0:true
+10-03 21:25:42.664 i/AppCrawlerMain: {Click} Back
+10-03 21:25:43.123 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:7, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button;, widgets:2 0:true 1:false
+10-03 21:25:43.130 d/AppCrawlerDebug: Marking Screen apptest5 with depth 2 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button; as not finished
+10-03 21:25:43.133 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 21:25:43.243 i/AppCrawlerMain: {Click} MAIN8 Button [419,1693][661,1825]
+10-03 21:25:43.943 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:3, depth:3, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;TextView;, widgets:0
+10-03 21:25:44.215 i/AppCrawlerMain: {Click} Back
+10-03 21:25:44.668 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:7, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button;, widgets:2 0:true 1:true
+10-03 21:25:45.046 i/AppCrawlerMain: {Click} Back
+10-03 21:25:45.546 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:true 2:true 3:true
+10-03 21:25:46.011 i/AppCrawlerMain: {Stop} root screen finished, id:1
+10-03 21:25:46.016 i/AppCrawlerMain: Total executed steps:19, peak depth:4, detected screens:7, screenshot:7
+10-03 21:25:46.020 i/AppCrawlerMain: CPU average:0.0%, CPU peak:0.0%, Memory average (KB):0, Memory peak (KB):0

@@ -26,6 +26,7 @@ import android.support.test.uiautomator.UiWatcher;
 import android.util.Log;
 
 import com.eaway.appcrawler.Config;
+import com.eaway.appcrawler.FileLog;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -47,33 +48,13 @@ public class UiWatchers {
     public void registerAnrAndCrashWatchers() {
         sDevice = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
-        sDevice.registerWatcher("ANR", new UiWatcher() {
-            @Override
-            public boolean checkForCondition() {
-                return handleAnr();
-            }
-        });
+        sDevice.registerWatcher("ANR", this::handleAnr);
 
-        sDevice.registerWatcher("ANR2", new UiWatcher() {
-            @Override
-            public boolean checkForCondition() {
-                return handleAnr2();
-            }
-        });
+        sDevice.registerWatcher("ANR2", this::handleAnr2);
 
-        sDevice.registerWatcher("CRASH", new UiWatcher() {
-            @Override
-            public boolean checkForCondition() {
-                return handleCrash();
-            }
-        });
+        sDevice.registerWatcher("CRASH", this::handleCrash);
 
-        sDevice.registerWatcher("CRASH2", new UiWatcher() {
-            @Override
-            public boolean checkForCondition() {
-                return handleCrash2();
-            }
-        });
+        sDevice.registerWatcher("CRASH2", this::handleCrash2);
 
         //sDevice.registerWatcher("COMMONDIALOG", new UiWatcher() {
         //    @Override
@@ -183,7 +164,7 @@ public class UiWatchers {
      */
     public void postHandler() {
         // TODO: Add custom error logging here
-
+        FileLog.e(TAG, "{CRASH}");
         String formatedOutput = String.format("UI Exception Message: %-20s\n",
                 sDevice.getCurrentPackageName());
         Log.e(TAG, formatedOutput);

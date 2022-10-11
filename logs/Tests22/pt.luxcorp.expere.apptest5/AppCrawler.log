@@ -1,0 +1,39 @@
+10-03 19:24:28.001 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 19:24:28.005 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 19:24:28.006 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest5, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 19:24:28.029 i/AppCrawlerMain: {Press} Home
+10-03 19:24:28.225 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest5
+10-03 19:24:34.745 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:false 1:false 2:false 3:false
+10-03 19:24:35.076 i/AppCrawlerMain: {Screenshot} (0) apptest5.png
+10-03 19:24:35.079 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 19:24:35.187 i/AppCrawlerMain: {Click} MAIN2 Button [78,665][320,797]
+10-03 19:24:35.691 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:24:35.693 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:24:35.703 d/AppCrawler: Don't ask again
+10-03 19:24:35.712 d/AppCrawler: Deny
+10-03 19:24:35.721 d/AppCrawler: Allow
+10-03 19:24:36.031 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:24:36.036 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:24:36.046 d/AppCrawler: Don't ask again
+10-03 19:24:36.056 d/AppCrawler: Deny
+10-03 19:24:36.065 d/AppCrawler: Allow
+10-03 19:24:36.368 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:24:36.373 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:24:36.382 d/AppCrawler: Don't ask again
+10-03 19:24:36.392 d/AppCrawler: Deny
+10-03 19:24:36.401 d/AppCrawler: Allow
+10-03 19:24:36.704 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:24:36.710 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:24:36.719 d/AppCrawler: Don't ask again
+10-03 19:24:36.729 d/AppCrawler: Deny
+10-03 19:24:36.740 d/AppCrawler: Allow
+10-03 19:24:37.162 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:24:37.169 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:24:37.194 d/AppCrawler: Don't ask again
+10-03 19:24:37.211 d/AppCrawler: Deny
+10-03 19:24:37.228 d/AppCrawler: Allow
+10-03 19:24:37.535 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:24:37.539 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:24:37.548 d/AppCrawler: Don't ask again
+10-03 19:24:37.557 d/AppCrawler: Deny
+10-03 19:24:37.566 d/AppCrawler: Allow

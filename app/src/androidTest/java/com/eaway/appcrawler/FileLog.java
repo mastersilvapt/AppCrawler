@@ -21,8 +21,7 @@ public class FileLog {
         PrintWriter writer = null;
         try {
             writer = new PrintWriter(new BufferedWriter(new FileWriter(Config.sFileLog, true)));
-            if (writer != null)
-                writer.println(String.format("%s %c/%s: %s", sdf.format(new Date()), lv, tag, msg));
+            writer.println(String.format("%s %c/%s: %s", sdf.format(new Date()), lv, tag, msg));
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

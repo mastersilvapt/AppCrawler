@@ -1,0 +1,18 @@
+10-02 19:00:19.847 i/AppCrawlerMain: Version: 1.0.0.0
+10-02 19:00:19.850 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-02 19:00:19.851 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest2, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-02 19:00:19.890 i/AppCrawlerMain: {Press} Home
+10-02 19:00:21.055 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest2
+10-02 19:00:26.984 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest2, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:false 1:false
+10-02 19:00:27.359 i/AppCrawlerMain: {Screenshot} (0) apptest2.png
+10-02 19:00:27.499 i/AppCrawlerMain: {Click} SETTINGS Button [390,243][686,375]
+10-02 19:00:29.403 i/AppCrawlerMain: {Inspect} NEW screen, name:SettingsActivity, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;ImageButton;TextView;LinearLayout;RelativeLayout;TextView;TextView;TextView;, widgets:5 0:false 1:false 2:false 3:false 4:false
+10-02 19:00:29.623 i/AppCrawlerMain: {Screenshot} (1) SettingsActivity.png
+10-02 19:00:29.821 i/AppCrawlerMain: {Click} Navigate up ImageButton [0,89][154,243]
+10-02 19:00:30.591 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest2, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:false 1:false
+10-02 19:00:30.726 i/AppCrawlerMain: {Click} SETTINGS Button [390,243][686,375]
+10-02 19:00:32.174 i/AppCrawlerMain: {Inspect} OLD screen, name:SettingsActivity, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;ImageButton;TextView;LinearLayout;RelativeLayout;TextView;TextView;TextView;, widgets:5 0:true 1:false 2:false 3:false 4:false
+10-02 19:00:32.426 i/AppCrawlerMain: {Click} LinearLayout [0,384][1080,584]
+10-02 19:00:33.716 i/AppCrawlerMain: {Inspect} NEW screen, name:Your signature, id:3, depth:3, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;FrameLayout;FrameLayout;LinearLayoutCompat;LinearLayout;LinearLayout;TextView;FrameLayout;FrameLayout;ScrollView;LinearLayout;, widgets:3 0:false 1:false 2:false
+10-02 19:00:33.998 i/AppCrawlerMain: {Screenshot} (2) Your signature.png
+10-02 19:00:34.213 i/AppCrawlerMain: {Click} December EditText [127,1086][953,1210]

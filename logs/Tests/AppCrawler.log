@@ -1,0 +1,20 @@
+10-02 18:58:31.819 i/AppCrawlerMain: Version: 1.0.0.0
+10-02 18:58:31.826 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-02 18:58:31.828 i/AppCrawlerMain: TargetPackage: com.google.android.youtube, Debug: false, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-02 18:58:31.855 i/AppCrawlerMain: {Press} Home
+10-02 18:58:37.388 i/AppCrawlerMain: {Launch} com.google.android.youtube
+10-02 18:58:44.621 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.systemui
+10-02 18:58:46.325 i/AppCrawlerMain: {Screenshot} (0) Lock screen. (com.android.systemui).png
+10-02 18:58:47.148 i/AppCrawlerMain: {Click} Back
+10-02 18:58:47.182 i/AppCrawlerMain: {Launch} com.google.android.youtube
+10-02 18:58:54.776 i/AppCrawlerMain: {Inspect} NEW screen, name:YouTube, id:2, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;LinearLayout;FrameLayout;DrawerLayout;FrameLayout;View;ViewGroup;FrameLayout;FrameLayout;ViewGroup;ScrollView;FrameLayout;LinearLayout;, widgets:9 0:false 1:false 2:false 3:false 4:false 5:false 6:false 7:false 8:false
+10-02 18:58:55.071 i/AppCrawlerMain: {Screenshot} (1) YouTube.png
+10-02 18:58:55.261 i/AppCrawlerMain: {Click} Cast. Disconnected View [541,89][673,221]
+10-02 18:58:57.688 i/AppCrawlerMain: {Inspect} OLD screen, name:YouTube, id:2, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;LinearLayout;FrameLayout;DrawerLayout;FrameLayout;View;ViewGroup;FrameLayout;FrameLayout;ViewGroup;ScrollView;FrameLayout;LinearLayout;, widgets:9 0:true 1:false 2:false 3:false 4:false 5:false 6:false 7:false 8:false
+10-02 18:58:57.908 i/AppCrawlerMain: {Click} Notifications ImageView [673,89][805,221]
+10-02 18:58:59.900 i/AppCrawlerMain: {Inspect} OLD screen, name:YouTube, id:2, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;LinearLayout;FrameLayout;DrawerLayout;FrameLayout;View;ViewGroup;FrameLayout;FrameLayout;ViewGroup;ScrollView;FrameLayout;LinearLayout;, widgets:9 0:true 1:true 2:false 3:false 4:false 5:false 6:false 7:false 8:false
+10-02 18:59:00.126 i/AppCrawlerMain: {Click} Search Button [837,89][969,221]
+10-02 18:59:01.464 i/AppCrawlerMain: {Inspect} OLD screen, name:YouTube, id:2, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;LinearLayout;FrameLayout;DrawerLayout;FrameLayout;View;ViewGroup;FrameLayout;FrameLayout;ViewGroup;ScrollView;FrameLayout;LinearLayout;, widgets:9 0:true 1:true 2:true 3:false 4:false 5:false 6:false 7:false 8:false
+10-02 18:59:03.333 i/AppCrawlerMain: {Stop} root screen finished, id:2
+10-02 18:59:03.337 i/AppCrawlerMain: Total executed steps:5, peak depth:1, detected screens:2, screenshot:2
+10-02 18:59:03.341 i/AppCrawlerMain: CPU average:0.0%, CPU peak:0.0%, Memory average (KB):0, Memory peak (KB):0

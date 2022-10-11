@@ -1,0 +1,5 @@
+10-03 21:26:58.937 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 21:26:58.940 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 21:26:58.941 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest5, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 21:26:58.976 i/AppCrawlerMain: {Press} Home
+10-03 21:26:59.090 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest5

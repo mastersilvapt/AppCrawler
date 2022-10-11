@@ -1,0 +1,18 @@
+10-03 11:45:21.178 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 11:45:21.181 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 11:45:21.183 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest3, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 11:45:21.214 i/AppCrawlerMain: {Press} Home
+10-03 11:45:21.388 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest3
+10-03 11:45:27.883 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;TextView;Button;, widgets:1 0:false
+10-03 11:45:28.284 i/AppCrawlerMain: {Screenshot} (0) apptest3.png
+10-03 11:45:28.356 i/AppCrawlerMain: {Click} NEXT Button [419,1693][661,1825]
+10-03 11:45:29.642 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Switch;TextView;Button;Button;, widgets:3 0:false 1:false 2:false
+10-03 11:45:29.902 i/AppCrawlerMain: {Screenshot} (1) apptest3.png
+10-03 11:45:30.041 i/AppCrawlerMain: {Click} Switch OFF Switch [419,432][662,506]
+10-03 11:45:30.852 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest3, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Switch;TextView;Button;Button;, widgets:3 0:true 1:false 2:false
+10-03 11:45:30.944 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1179][688,1311]
+10-03 11:45:31.527 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest3, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;TextView;Button;, widgets:1 0:false
+10-03 11:45:31.647 i/AppCrawlerMain: {Click} NEXT Button [419,1693][661,1825]
+10-03 11:45:32.277 i/AppCrawlerMain: {Stop} root screen finished, id:1
+10-03 11:45:32.281 i/AppCrawlerMain: Total executed steps:4, peak depth:2, detected screens:2, screenshot:2
+10-03 11:45:32.286 i/AppCrawlerMain: CPU average:0.0%, CPU peak:0.0%, Memory average (KB):0, Memory peak (KB):0

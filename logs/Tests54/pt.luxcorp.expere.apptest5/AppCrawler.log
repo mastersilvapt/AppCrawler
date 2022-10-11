@@ -1,0 +1,315 @@
+10-03 22:00:31.051 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 22:00:31.058 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 22:00:31.060 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest5, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 22:00:31.082 i/AppCrawlerMain: {Press} Home
+10-03 22:00:31.224 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest5
+10-03 22:00:31.305 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:31.413 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:32.547 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:32.694 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:33.782 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:33.842 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:34.911 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:34.960 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:36.049 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:36.105 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:37.453 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:37.474 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:37.779 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:37.799 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:37.815 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:37.835 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:37.877 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:false 1:false 2:false 3:false
+10-03 22:00:38.245 i/AppCrawlerMain: {Screenshot} (0) apptest5.png
+10-03 22:00:38.255 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:38.284 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:38.309 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:38.335 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:38.374 i/AppCrawlerMain: {Click} MAIN2 Button [78,665][320,797]
+10-03 22:00:38.909 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 22:00:38.916 i/AppCrawlerMain: {PM} requesting permissions!
+10-03 22:00:39.556 i/AppCrawlerMain: {PM} Permission Denied!
+10-03 22:00:39.734 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:39.753 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:40.020 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:40.041 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:40.057 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:40.077 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:40.115 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:false 2:false 3:false
+10-03 22:00:40.128 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:40.151 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:40.170 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:40.197 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:40.270 i/AppCrawlerMain: {Click} MAIN3 Button [761,665][1003,797]
+10-03 22:00:40.663 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:40.694 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:40.897 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:40.918 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:40.965 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:40.994 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:41.022 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:false 1:false
+10-03 22:00:41.355 i/AppCrawlerMain: {Screenshot} (1) apptest5.png
+10-03 22:00:41.364 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:41.406 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:41.421 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:41.439 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:41.471 i/AppCrawlerMain: {Click} MAIN6 Button [419,665][661,797]
+10-03 22:00:42.762 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:42.808 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:43.103 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:43.126 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:43.145 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:43.169 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:43.207 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:false 2:false 3:false
+10-03 22:00:43.220 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:43.241 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:43.255 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:43.276 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:43.328 i/AppCrawlerMain: {Click} MAIN3 Button [761,665][1003,797]
+10-03 22:00:43.739 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:43.763 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:43.966 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:43.983 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:43.997 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:44.013 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:44.082 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:true 1:false
+10-03 22:00:44.097 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:44.121 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:44.142 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:44.173 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:44.226 i/AppCrawlerMain: {Click} MAIN7 Button [419,1693][661,1825]
+10-03 22:00:44.593 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:44.613 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:44.758 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:44.773 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:44.783 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:44.799 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:44.974 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:44.997 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:45.135 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:45.154 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:45.170 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:45.186 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:45.199 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:3, depth:3, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;, widgets:1 0:false
+10-03 22:00:45.451 i/AppCrawlerMain: {Screenshot} (2) apptest5.png
+10-03 22:00:45.459 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:45.484 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:45.504 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:45.532 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:45.570 i/AppCrawlerMain: {Click} MAIN9 Button [419,665][661,797]
+10-03 22:00:45.937 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:45.961 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:46.132 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:46.148 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:46.160 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:46.176 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:46.408 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:46.431 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:46.601 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:46.621 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:46.633 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:46.647 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:46.657 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:4, depth:4, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;ImageView;TextView;ImageView;, widgets:0
+10-03 22:00:46.946 i/AppCrawlerMain: {Screenshot} (3) apptest5.png
+10-03 22:00:46.955 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:46.977 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:46.996 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.024 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.172 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.190 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.379 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.400 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.416 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.437 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.453 i/AppCrawlerMain: {Click} Back
+10-03 22:00:47.677 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.698 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.833 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.848 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.863 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.882 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.900 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:3, depth:3, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;, widgets:1 0:true
+10-03 22:00:47.915 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.933 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:47.947 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:47.964 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.173 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.194 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.326 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.338 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.350 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.364 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.378 i/AppCrawlerMain: {Click} Back
+10-03 22:00:48.610 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.634 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.815 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.832 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.847 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.863 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.882 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:2, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;Button;, widgets:2 0:true 1:true
+10-03 22:00:48.891 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.945 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:48.962 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:48.978 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.094 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.107 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.233 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.246 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.256 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.269 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.283 i/AppCrawlerMain: {Click} Back
+10-03 22:00:49.507 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.527 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.774 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.794 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.851 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.875 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.903 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:true 2:false 3:false
+10-03 22:00:49.912 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.930 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.948 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:49.966 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:49.999 i/AppCrawlerMain: {Click} MAIN4 Button [78,1693][320,1825]
+10-03 22:00:50.334 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:50.354 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:50.512 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:50.528 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:50.541 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:50.562 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:50.574 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:5, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;TextView;ImageView;, widgets:0
+10-03 22:00:51.040 i/AppCrawlerMain: {Screenshot} (4) apptest5.png
+10-03 22:00:51.045 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.057 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.065 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.078 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.188 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.203 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.321 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.334 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.344 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.356 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.365 i/AppCrawlerMain: {Click} Back
+10-03 22:00:51.572 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.593 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.825 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.841 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.856 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:51.917 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:51.967 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:true 2:true 3:false
+10-03 22:00:51.980 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:52.007 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:52.040 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:52.071 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:52.142 i/AppCrawlerMain: {Click} MAIN5 Button [761,1693][1003,1825]
+10-03 22:00:52.513 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:52.531 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:52.724 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:52.743 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:52.763 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:52.782 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:52.988 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:53.006 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:53.249 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:53.266 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:53.279 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:53.297 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:53.322 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:6, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button;, widgets:2 0:false 1:false
+10-03 22:00:53.598 i/AppCrawlerMain: {Screenshot} (5) apptest5.png
+10-03 22:00:53.606 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:53.628 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:53.643 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:53.665 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:53.713 i/AppCrawlerMain: {Click} MAIN7 Button [419,665][661,797]
+10-03 22:00:54.066 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.092 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.229 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.245 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.257 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.271 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.287 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:3, depth:3, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;, widgets:1 0:true
+10-03 22:00:54.298 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.316 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.329 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.351 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.546 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.564 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.674 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.688 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.700 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.715 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:54.728 i/AppCrawlerMain: {Click} Back
+10-03 22:00:54.940 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:54.970 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:55.188 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:55.210 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:55.223 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:55.237 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:55.299 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:6, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button;, widgets:2 0:true 1:false
+10-03 22:00:55.310 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:55.329 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:55.347 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:55.374 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:55.430 i/AppCrawlerMain: {Click} MAIN8 Button [419,1693][661,1825]
+10-03 22:00:55.782 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:55.802 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:55.952 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:55.967 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:55.977 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:55.990 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:56.135 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:56.158 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:56.316 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:56.334 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:56.353 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:56.378 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:56.399 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:7, depth:3, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;ImageView;TextView;, widgets:0
+10-03 22:00:56.672 i/AppCrawlerMain: {Screenshot} (6) apptest5.png
+10-03 22:00:56.679 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:56.701 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:56.717 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:56.743 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:56.908 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:56.930 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.040 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.054 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.065 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.080 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.091 i/AppCrawlerMain: {Click} Back
+10-03 22:00:57.310 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.330 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.513 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.533 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.548 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.563 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.582 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:6, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;TextView;ImageView;Button;, widgets:2 0:true 1:true
+10-03 22:00:57.592 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.645 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.665 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.685 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:57.835 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:57.848 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.021 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.034 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.047 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.064 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.089 i/AppCrawlerMain: {Click} Back
+10-03 22:00:58.303 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.325 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.535 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.552 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.566 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.586 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.632 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest5, id:1, depth:1, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:true 1:true 2:true 3:true
+10-03 22:00:58.647 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.670 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.689 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.716 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:58.862 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:58.875 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:59.056 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:59.068 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:59.080 e/AppCrawler: {CRASH} handleCrash
+10-03 22:00:59.095 e/AppCrawler: {CRASH} handleCrash2
+10-03 22:00:59.124 i/AppCrawlerMain: {Stop} root screen finished, id:1
+10-03 22:00:59.128 i/AppCrawlerMain: Total executed steps:19, peak depth:4, detected screens:7, screenshot:7
+10-03 22:00:59.132 i/AppCrawlerMain: CPU average:0.0%, CPU peak:0.0%, Memory average (KB):0, Memory peak (KB):0

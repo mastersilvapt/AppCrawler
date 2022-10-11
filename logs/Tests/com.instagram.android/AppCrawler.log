@@ -1,0 +1,5 @@
+09-20 11:28:51.135 i/AppCrawlerMain: Version: 1.0.0.0
+09-20 11:28:51.139 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+09-20 11:28:51.140 i/AppCrawlerMain: TargetPackage: com.instagram.android, Debug: false, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+09-20 11:28:51.165 i/AppCrawlerMain: {Press} Home
+09-20 11:28:51.314 i/AppCrawlerMain: {Launch} com.instagram.android

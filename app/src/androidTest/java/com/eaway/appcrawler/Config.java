@@ -20,7 +20,7 @@ public class Config {
     public static int sMaxScreenLoop = 20;
     public static int sScreenSignatueLength = 160;
 
-    public static boolean sDebug = false;
+    public static boolean sDebug = true;
     public static boolean sCaptureSteps = false;
     public static boolean sRandomText = true;
 
@@ -29,7 +29,8 @@ public class Config {
     public static String sPerformanceLog;
 
     public static String sCrawlerPackage = "com.eaway.appcrawler";
-    public static String sTargetPackage = "com.google.android.youtube";
+    // public static String sTargetPackage = "com.google.android.youtube";
+    public static String sTargetPackage = "pt.luxcorp.expere.apptest5";
 
 
     // Activities to be ignored
@@ -41,6 +42,11 @@ public class Config {
     public static final String[] COMMON_BUTTONS = {
             "OK", "Cancel", "Yes", "No",
             "確定", "取消", "是", "否"
+    };
+
+    // Text for Deny Button on permission request
+    public static final String[] DENY_TEXT = {
+            "Deny", "Rejeitar"
     };
 
     // Text for EditText testing

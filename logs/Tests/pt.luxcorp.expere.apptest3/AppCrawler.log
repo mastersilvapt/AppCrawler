@@ -1,0 +1,22 @@
+10-02 19:21:01.306 i/AppCrawlerMain: Version: 1.0.0.0
+10-02 19:21:01.310 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-02 19:21:01.311 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest3, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-02 19:21:01.336 i/AppCrawlerMain: {Press} Home
+10-02 19:21:01.501 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest3
+10-02 19:21:07.178 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;TextView;Button;, widgets:1 0:false
+10-02 19:21:07.537 i/AppCrawlerMain: {Screenshot} (0) apptest3.png
+10-02 19:21:07.606 i/AppCrawlerMain: {Click} NEXT Button [419,1693][661,1825]
+10-02 19:21:08.754 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;TextView;Button;Button;, widgets:2 0:false 1:false
+10-02 19:21:09.040 i/AppCrawlerMain: {Screenshot} (1) apptest3.png
+10-02 19:21:09.186 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-02 19:21:10.008 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest3, id:2, depth:2, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;TextView;Button;Button;, widgets:2 0:true 1:false
+10-02 19:21:10.138 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1699][688,1831]
+10-02 19:21:10.866 i/AppCrawlerMain: {Click} Back
+10-02 19:21:11.438 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest3, id:2, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;TextView;Button;Button;, widgets:2 0:true 1:true
+10-02 19:21:11.914 i/AppCrawlerMain: {Click} Back
+10-02 19:21:12.364 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest3, id:2, depth:2, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;TextView;Button;Button;, widgets:2 0:true 1:true
+10-02 19:21:12.862 i/AppCrawlerMain: {Click} Back
+10-02 19:21:13.317 i/AppCrawlerMain: {Inspect} OLD screen, name:apptest3, id:1, depth:1, finished:true, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;TextView;Button;, widgets:1 0:true
+10-02 19:21:13.782 i/AppCrawlerMain: {Stop} root screen finished, id:1
+10-02 19:21:13.792 i/AppCrawlerMain: Total executed steps:6, peak depth:2, detected screens:2, screenshot:2
+10-02 19:21:13.801 i/AppCrawlerMain: CPU average:0.0%, CPU peak:0.0%, Memory average (KB):0, Memory peak (KB):0

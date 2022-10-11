@@ -1,0 +1,371 @@
+10-03 11:26:07.941 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 11:26:07.944 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 11:26:07.945 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest3, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 11:26:07.969 i/AppCrawlerMain: {Press} Home
+10-03 11:26:08.123 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest3
+10-03 11:26:14.169 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:1, depth:0, finished:false, signature:46660112, widgets:1 0:false
+10-03 11:26:14.550 i/AppCrawlerMain: {Screenshot} (0) apptest3.png
+10-03 11:26:14.679 i/AppCrawlerMain: {Click} NEXT Button [419,1693][661,1825]
+10-03 11:26:15.241 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:2, depth:2, finished:false, signature:40847118, widgets:2 0:false 1:false
+10-03 11:26:15.805 i/AppCrawlerMain: {Screenshot} (1) apptest3.png
+10-03 11:26:15.924 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:16.251 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:3, depth:3, finished:false, signature:64730415, widgets:2 0:false 1:false
+10-03 11:26:16.999 i/AppCrawlerMain: {Screenshot} (2) apptest3.png
+10-03 11:26:17.114 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:17.425 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:4, depth:4, finished:false, signature:119187260, widgets:1 0:false
+10-03 11:26:18.183 i/AppCrawlerMain: {Screenshot} (3) apptest3.png
+10-03 11:26:18.299 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:18.704 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:5, depth:5, finished:false, signature:39634458, widgets:2 0:false 1:false
+10-03 11:26:19.366 i/AppCrawlerMain: {Screenshot} (4) apptest3.png
+10-03 11:26:19.489 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:19.783 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:6, depth:6, finished:false, signature:133723467, widgets:1 0:false
+10-03 11:26:20.565 i/AppCrawlerMain: {Screenshot} (5) apptest3.png
+10-03 11:26:20.675 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:21.114 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:7, depth:7, finished:false, signature:248074305, widgets:2 0:false 1:false
+10-03 11:26:21.756 i/AppCrawlerMain: {Screenshot} (6) apptest3.png
+10-03 11:26:21.873 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:22.166 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:8, depth:8, finished:false, signature:91302374, widgets:1 0:false
+10-03 11:26:22.907 i/AppCrawlerMain: {Screenshot} (7) apptest3.png
+10-03 11:26:23.023 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:23.453 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:9, depth:9, finished:false, signature:33989076, widgets:2 0:false 1:false
+10-03 11:26:24.063 i/AppCrawlerMain: {Screenshot} (8) apptest3.png
+10-03 11:26:24.185 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:24.467 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:10, depth:10, finished:false, signature:1683325, widgets:1 0:false
+10-03 11:26:25.244 i/AppCrawlerMain: {Screenshot} (9) apptest3.png
+10-03 11:26:25.358 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:25.752 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:11, depth:11, finished:false, signature:152060611, widgets:2 0:false 1:false
+10-03 11:26:26.421 i/AppCrawlerMain: {Screenshot} (10) apptest3.png
+10-03 11:26:26.537 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:26.831 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:12, depth:12, finished:false, signature:102106944, widgets:1 0:false
+10-03 11:26:27.562 i/AppCrawlerMain: {Screenshot} (11) apptest3.png
+10-03 11:26:27.636 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:28.037 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:13, depth:13, finished:false, signature:163680190, widgets:2 0:false 1:false
+10-03 11:26:28.684 i/AppCrawlerMain: {Screenshot} (12) apptest3.png
+10-03 11:26:28.800 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:29.069 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:14, depth:14, finished:false, signature:204097567, widgets:1 0:false
+10-03 11:26:29.877 i/AppCrawlerMain: {Screenshot} (13) apptest3.png
+10-03 11:26:29.984 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:30.411 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:15, depth:15, finished:false, signature:36983093, widgets:2 0:false 1:false
+10-03 11:26:31.043 i/AppCrawlerMain: {Screenshot} (14) apptest3.png
+10-03 11:26:31.158 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:31.432 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:16, depth:16, finished:false, signature:84077002, widgets:1 0:false
+10-03 11:26:32.203 i/AppCrawlerMain: {Screenshot} (15) apptest3.png
+10-03 11:26:32.314 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:32.718 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:17, depth:17, finished:false, signature:142966360, widgets:2 0:false 1:false
+10-03 11:26:33.367 i/AppCrawlerMain: {Screenshot} (16) apptest3.png
+10-03 11:26:33.479 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:33.754 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:18, depth:18, finished:false, signature:224775089, widgets:1 0:false
+10-03 11:26:34.565 i/AppCrawlerMain: {Screenshot} (17) apptest3.png
+10-03 11:26:34.674 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:35.073 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:19, depth:19, finished:false, signature:120003607, widgets:2 0:false 1:false
+10-03 11:26:35.776 i/AppCrawlerMain: {Screenshot} (18) apptest3.png
+10-03 11:26:35.892 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:36.173 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:20, depth:20, finished:false, signature:117450756, widgets:1 0:false
+10-03 11:26:36.942 i/AppCrawlerMain: {Screenshot} (19) apptest3.png
+10-03 11:26:37.052 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:37.444 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:21, depth:21, finished:false, signature:92727330, widgets:2 0:false 1:false
+10-03 11:26:38.141 i/AppCrawlerMain: {Screenshot} (20) apptest3.png
+10-03 11:26:38.256 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:38.529 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:22, depth:22, finished:false, signature:24601267, widgets:1 0:false
+10-03 11:26:39.307 i/AppCrawlerMain: {Screenshot} (21) apptest3.png
+10-03 11:26:39.415 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:39.812 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:23, depth:23, finished:false, signature:175718377, widgets:2 0:false 1:false
+10-03 11:26:40.464 i/AppCrawlerMain: {Screenshot} (22) apptest3.png
+10-03 11:26:40.580 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:40.854 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:24, depth:24, finished:false, signature:240084078, widgets:1 0:false
+10-03 11:26:41.623 i/AppCrawlerMain: {Screenshot} (23) apptest3.png
+10-03 11:26:41.725 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:42.132 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:25, depth:25, finished:false, signature:242381724, widgets:2 0:false 1:false
+10-03 11:26:42.801 i/AppCrawlerMain: {Screenshot} (24) apptest3.png
+10-03 11:26:42.912 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:43.192 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:26, depth:26, finished:false, signature:211612069, widgets:1 0:false
+10-03 11:26:43.965 i/AppCrawlerMain: {Screenshot} (25) apptest3.png
+10-03 11:26:44.063 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:44.468 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:27, depth:27, finished:false, signature:235042091, widgets:2 0:false 1:false
+10-03 11:26:45.126 i/AppCrawlerMain: {Screenshot} (26) apptest3.png
+10-03 11:26:45.234 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:45.512 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:28, depth:28, finished:false, signature:16854408, widgets:1 0:false
+10-03 11:26:46.283 i/AppCrawlerMain: {Screenshot} (27) apptest3.png
+10-03 11:26:46.390 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:26:46.800 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:29, depth:29, finished:false, signature:46895942, widgets:2 0:false 1:false
+10-03 11:26:47.445 i/AppCrawlerMain: {Screenshot} (28) apptest3.png
+10-03 11:26:47.559 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:26:47.843 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:30, depth:30, finished:false, signature:95500551, widgets:1 0:false
+10-03 11:26:48.646 i/AppCrawlerMain: {Screenshot} (29) apptest3.png
+10-03 11:26:48.647 i/AppCrawlerMain: {Click} Back
+10-03 11:26:49.544 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:31, depth:30, finished:false, signature:172535901, widgets:2 0:false 1:false
+10-03 11:26:50.040 i/AppCrawlerMain: {Screenshot} (30) apptest3.png
+10-03 11:26:50.041 i/AppCrawlerMain: {Click} Back
+10-03 11:26:50.802 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:32, depth:30, finished:false, signature:178151075, widgets:1 0:false
+10-03 11:26:51.418 i/AppCrawlerMain: {Screenshot} (31) apptest3.png
+10-03 11:26:51.420 i/AppCrawlerMain: {Click} Back
+10-03 11:26:52.791 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:33, depth:30, finished:false, signature:216331609, widgets:2 0:false 1:false
+10-03 11:26:53.043 i/AppCrawlerMain: {Screenshot} (32) apptest3.png
+10-03 11:26:53.045 i/AppCrawlerMain: {Click} Back
+10-03 11:26:53.745 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:34, depth:30, finished:false, signature:229523967, widgets:1 0:false
+10-03 11:26:54.402 i/AppCrawlerMain: {Screenshot} (33) apptest3.png
+10-03 11:26:54.404 i/AppCrawlerMain: {Click} Back
+10-03 11:26:55.305 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:35, depth:30, finished:false, signature:90607125, widgets:2 0:false 1:false
+10-03 11:26:55.767 i/AppCrawlerMain: {Screenshot} (34) apptest3.png
+10-03 11:26:55.768 i/AppCrawlerMain: {Click} Back
+10-03 11:26:56.594 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:36, depth:30, finished:false, signature:263126811, widgets:1 0:false
+10-03 11:26:57.128 i/AppCrawlerMain: {Screenshot} (35) apptest3.png
+10-03 11:26:57.129 i/AppCrawlerMain: {Click} Back
+10-03 11:26:58.585 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:37, depth:30, finished:false, signature:221181585, widgets:2 0:false 1:false
+10-03 11:26:58.859 i/AppCrawlerMain: {Screenshot} (36) apptest3.png
+10-03 11:26:58.860 i/AppCrawlerMain: {Click} Back
+10-03 11:26:59.677 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:38, depth:30, finished:false, signature:104100343, widgets:1 0:false
+10-03 11:27:00.224 i/AppCrawlerMain: {Screenshot} (37) apptest3.png
+10-03 11:27:00.226 i/AppCrawlerMain: {Click} Back
+10-03 11:27:01.112 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:39, depth:30, finished:false, signature:138111693, widgets:2 0:false 1:false
+10-03 11:27:01.566 i/AppCrawlerMain: {Screenshot} (38) apptest3.png
+10-03 11:27:01.567 i/AppCrawlerMain: {Click} Back
+10-03 11:27:02.388 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:40, depth:30, finished:false, signature:36976275, widgets:1 0:false
+10-03 11:27:02.923 i/AppCrawlerMain: {Screenshot} (39) apptest3.png
+10-03 11:27:02.925 i/AppCrawlerMain: {Click} Back
+10-03 11:27:03.715 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:41, depth:30, finished:false, signature:52487881, widgets:2 0:false 1:false
+10-03 11:27:04.305 i/AppCrawlerMain: {Screenshot} (40) apptest3.png
+10-03 11:27:04.307 i/AppCrawlerMain: {Click} Back
+10-03 11:27:05.122 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:42, depth:30, finished:false, signature:73509103, widgets:1 0:false
+10-03 11:27:05.665 i/AppCrawlerMain: {Screenshot} (41) apptest3.png
+10-03 11:27:05.666 i/AppCrawlerMain: {Click} Back
+10-03 11:27:07.094 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:43, depth:30, finished:false, signature:80225925, widgets:2 0:false 1:false
+10-03 11:27:07.344 i/AppCrawlerMain: {Screenshot} (42) apptest3.png
+10-03 11:27:07.345 i/AppCrawlerMain: {Click} Back
+10-03 11:27:08.187 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:44, depth:30, finished:false, signature:189392139, widgets:1 0:false
+10-03 11:27:08.682 i/AppCrawlerMain: {Screenshot} (43) apptest3.png
+10-03 11:27:08.684 i/AppCrawlerMain: {Click} Back
+10-03 11:27:09.551 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:45, depth:30, finished:false, signature:266970625, widgets:2 0:false 1:false
+10-03 11:27:10.047 i/AppCrawlerMain: {Screenshot} (44) apptest3.png
+10-03 11:27:10.049 i/AppCrawlerMain: {Click} Back
+10-03 11:27:11.355 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:46, depth:30, finished:false, signature:120571623, widgets:1 0:false
+10-03 11:27:11.608 i/AppCrawlerMain: {Screenshot} (45) apptest3.png
+10-03 11:27:11.609 i/AppCrawlerMain: {Click} Back
+10-03 11:27:12.470 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:47, depth:30, finished:false, signature:4825405, widgets:2 0:false 1:false
+10-03 11:27:12.949 i/AppCrawlerMain: {Screenshot} (46) apptest3.png
+10-03 11:27:12.951 i/AppCrawlerMain: {Click} Back
+10-03 11:27:13.707 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:48, depth:30, finished:false, signature:262662787, widgets:1 0:false
+10-03 11:27:14.282 i/AppCrawlerMain: {Screenshot} (47) apptest3.png
+10-03 11:27:14.284 i/AppCrawlerMain: {Click} Back
+10-03 11:27:15.178 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:49, depth:30, finished:false, signature:263459897, widgets:2 0:false 1:false
+10-03 11:27:15.676 i/AppCrawlerMain: {Screenshot} (48) apptest3.png
+10-03 11:27:15.678 i/AppCrawlerMain: {Click} Back
+10-03 11:27:16.406 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:50, depth:30, finished:false, signature:116698079, widgets:1 0:false
+10-03 11:27:17.025 i/AppCrawlerMain: {Screenshot} (49) apptest3.png
+10-03 11:27:17.027 i/AppCrawlerMain: {Click} Back
+10-03 11:27:17.869 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:51, depth:30, finished:false, signature:246987509, widgets:2 0:false 1:false
+10-03 11:27:18.406 i/AppCrawlerMain: {Screenshot} (50) apptest3.png
+10-03 11:27:18.407 i/AppCrawlerMain: {Click} Back
+10-03 11:27:19.158 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:52, depth:30, finished:false, signature:119678715, widgets:1 0:false
+10-03 11:27:19.762 i/AppCrawlerMain: {Screenshot} (51) apptest3.png
+10-03 11:27:19.764 i/AppCrawlerMain: {Click} Back
+10-03 11:27:20.680 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:53, depth:30, finished:false, signature:220664177, widgets:2 0:false 1:false
+10-03 11:27:21.124 i/AppCrawlerMain: {Screenshot} (52) apptest3.png
+10-03 11:27:21.125 i/AppCrawlerMain: {Click} Back
+10-03 11:27:21.893 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:54, depth:30, finished:false, signature:81934295, widgets:1 0:false
+10-03 11:27:22.505 i/AppCrawlerMain: {Screenshot} (53) apptest3.png
+10-03 11:27:22.506 i/AppCrawlerMain: {Click} Back
+10-03 11:27:23.333 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:55, depth:30, finished:false, signature:239752109, widgets:2 0:false 1:false
+10-03 11:27:23.865 i/AppCrawlerMain: {Screenshot} (54) apptest3.png
+10-03 11:27:23.867 i/AppCrawlerMain: {Click} Back
+10-03 11:27:24.664 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:56, depth:30, finished:false, signature:69761651, widgets:1 0:false
+10-03 11:27:25.222 i/AppCrawlerMain: {Screenshot} (55) apptest3.png
+10-03 11:27:25.224 i/AppCrawlerMain: {Click} Back
+10-03 11:27:26.128 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:57, depth:30, finished:false, signature:82148777, widgets:2 0:false 1:false
+10-03 11:27:26.564 i/AppCrawlerMain: {Screenshot} (56) apptest3.png
+10-03 11:27:26.566 i/AppCrawlerMain: {Click} Back
+10-03 11:27:27.438 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:58, depth:30, finished:false, signature:176573135, widgets:2 0:false 1:false
+10-03 11:27:27.927 i/AppCrawlerMain: {Screenshot} (57) apptest3.png
+10-03 11:27:27.929 i/AppCrawlerMain: {Click} Back
+10-03 11:27:28.675 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:59, depth:30, finished:false, signature:49236837, widgets:1 0:false
+10-03 11:27:29.304 i/AppCrawlerMain: {Screenshot} (58) apptest3.png
+10-03 11:27:29.306 i/AppCrawlerMain: {Click} Back
+10-03 11:27:29.723 i/AppCrawlerMain: {Inspect} screen, in other package: com.google.android.apps.nexuslauncher
+10-03 11:27:30.958 i/AppCrawlerMain: {Screenshot} (59) Home screen 1 of 2 (com.google.android.apps.nexuslauncher).png
+10-03 11:27:31.565 i/AppCrawlerMain: {Click} Back
+10-03 11:27:32.604 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest3
+10-03 11:27:33.758 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:61, depth:30, finished:false, signature:189187307, widgets:1 0:false
+10-03 11:27:33.987 i/AppCrawlerMain: {Screenshot} (60) apptest3.png
+10-03 11:27:34.086 i/AppCrawlerMain: {Click} NEXT Button [419,1693][661,1825]
+10-03 11:27:34.443 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:62, depth:2, finished:false, signature:151927009, widgets:2 0:false 1:false
+10-03 11:27:35.123 i/AppCrawlerMain: {Screenshot} (61) apptest3.png
+10-03 11:27:35.236 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:35.515 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:63, depth:3, finished:false, signature:258536966, widgets:2 0:false 1:false
+10-03 11:27:36.305 i/AppCrawlerMain: {Screenshot} (62) apptest3.png
+10-03 11:27:36.401 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:36.674 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:64, depth:4, finished:false, signature:155894983, widgets:1 0:false
+10-03 11:27:37.426 i/AppCrawlerMain: {Screenshot} (63) apptest3.png
+10-03 11:27:37.528 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:37.915 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:65, depth:5, finished:false, signature:30704157, widgets:2 0:false 1:false
+10-03 11:27:38.545 i/AppCrawlerMain: {Screenshot} (64) apptest3.png
+10-03 11:27:38.659 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:38.924 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:66, depth:6, finished:false, signature:109997202, widgets:1 0:false
+10-03 11:27:39.705 i/AppCrawlerMain: {Screenshot} (65) apptest3.png
+10-03 11:27:39.805 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:40.203 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:67, depth:7, finished:false, signature:167408224, widgets:2 0:false 1:false
+10-03 11:27:40.849 i/AppCrawlerMain: {Screenshot} (66) apptest3.png
+10-03 11:27:40.957 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:41.231 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:68, depth:8, finished:false, signature:79438617, widgets:1 0:false
+10-03 11:27:42.023 i/AppCrawlerMain: {Screenshot} (67) apptest3.png
+10-03 11:27:42.122 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:42.510 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:69, depth:9, finished:false, signature:167085503, widgets:2 0:false 1:false
+10-03 11:27:43.205 i/AppCrawlerMain: {Screenshot} (68) apptest3.png
+10-03 11:27:43.305 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:43.564 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:70, depth:10, finished:false, signature:218387596, widgets:1 0:false
+10-03 11:27:44.367 i/AppCrawlerMain: {Screenshot} (69) apptest3.png
+10-03 11:27:44.463 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:44.846 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:71, depth:11, finished:false, signature:236387306, widgets:2 0:false 1:false
+10-03 11:27:45.505 i/AppCrawlerMain: {Screenshot} (70) apptest3.png
+10-03 11:27:45.615 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:45.879 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:72, depth:12, finished:false, signature:25607899, widgets:1 0:false
+10-03 11:27:46.679 i/AppCrawlerMain: {Screenshot} (71) apptest3.png
+10-03 11:27:46.782 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:47.160 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:73, depth:13, finished:false, signature:260447313, widgets:2 0:false 1:false
+10-03 11:27:47.847 i/AppCrawlerMain: {Screenshot} (72) apptest3.png
+10-03 11:27:47.956 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:48.232 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:74, depth:14, finished:false, signature:6352054, widgets:1 0:false
+10-03 11:27:49.044 i/AppCrawlerMain: {Screenshot} (73) apptest3.png
+10-03 11:27:49.130 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:49.511 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:75, depth:15, finished:false, signature:19835172, widgets:2 0:false 1:false
+10-03 11:27:50.205 i/AppCrawlerMain: {Screenshot} (74) apptest3.png
+10-03 11:27:50.315 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:50.591 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:76, depth:16, finished:false, signature:239021197, widgets:1 0:false
+10-03 11:27:51.343 i/AppCrawlerMain: {Screenshot} (75) apptest3.png
+10-03 11:27:51.445 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:51.834 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:77, depth:17, finished:false, signature:130821715, widgets:2 0:false 1:false
+10-03 11:27:52.484 i/AppCrawlerMain: {Screenshot} (76) apptest3.png
+10-03 11:27:52.594 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:52.857 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:78, depth:18, finished:false, signature:255800208, widgets:1 0:false
+10-03 11:27:53.644 i/AppCrawlerMain: {Screenshot} (77) apptest3.png
+10-03 11:27:53.748 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:54.125 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:79, depth:19, finished:false, signature:183295118, widgets:2 0:false 1:false
+10-03 11:27:54.785 i/AppCrawlerMain: {Screenshot} (78) apptest3.png
+10-03 11:27:54.883 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:55.132 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:80, depth:20, finished:false, signature:98655407, widgets:1 0:false
+10-03 11:27:55.926 i/AppCrawlerMain: {Screenshot} (79) apptest3.png
+10-03 11:27:56.030 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:56.414 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:81, depth:21, finished:false, signature:63594565, widgets:2 0:false 1:false
+10-03 11:27:57.068 i/AppCrawlerMain: {Screenshot} (80) apptest3.png
+10-03 11:27:57.174 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:57.445 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:82, depth:22, finished:false, signature:14562202, widgets:1 0:false
+10-03 11:27:58.224 i/AppCrawlerMain: {Screenshot} (81) apptest3.png
+10-03 11:27:58.329 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:27:58.707 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:83, depth:23, finished:false, signature:92136616, widgets:2 0:false 1:false
+10-03 11:27:59.355 i/AppCrawlerMain: {Screenshot} (82) apptest3.png
+10-03 11:27:59.463 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:27:59.727 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:84, depth:24, finished:false, signature:70630337, widgets:1 0:false
+10-03 11:28:00.504 i/AppCrawlerMain: {Screenshot} (83) apptest3.png
+10-03 11:28:00.611 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:28:01.006 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:85, depth:25, finished:false, signature:49951399, widgets:2 0:false 1:false
+10-03 11:28:01.666 i/AppCrawlerMain: {Screenshot} (84) apptest3.png
+10-03 11:28:01.728 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:28:01.984 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:86, depth:26, finished:false, signature:69247828, widgets:1 0:false
+10-03 11:28:02.803 i/AppCrawlerMain: {Screenshot} (85) apptest3.png
+10-03 11:28:02.891 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:28:03.268 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:87, depth:27, finished:false, signature:178756594, widgets:2 0:false 1:false
+10-03 11:28:03.964 i/AppCrawlerMain: {Screenshot} (86) apptest3.png
+10-03 11:28:04.075 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:28:04.333 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:88, depth:28, finished:false, signature:168645187, widgets:1 0:false
+10-03 11:28:05.126 i/AppCrawlerMain: {Screenshot} (87) apptest3.png
+10-03 11:28:05.232 i/AppCrawlerMain: {Click} PREVIOUS Button [393,1693][688,1825]
+10-03 11:28:05.607 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:89, depth:29, finished:false, signature:188031481, widgets:2 0:false 1:false
+10-03 11:28:06.286 i/AppCrawlerMain: {Screenshot} (88) apptest3.png
+10-03 11:28:06.394 i/AppCrawlerMain: {Click} NEXT Button [419,1179][661,1311]
+10-03 11:28:06.656 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:90, depth:30, finished:false, signature:93291838, widgets:1 0:false
+10-03 11:28:07.465 i/AppCrawlerMain: {Screenshot} (89) apptest3.png
+10-03 11:28:07.466 i/AppCrawlerMain: {Click} Back
+10-03 11:28:08.873 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:91, depth:30, finished:false, signature:253561068, widgets:2 0:false 1:false
+10-03 11:28:09.147 i/AppCrawlerMain: {Screenshot} (90) apptest3.png
+10-03 11:28:09.148 i/AppCrawlerMain: {Click} Back
+10-03 11:28:09.962 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:92, depth:30, finished:false, signature:192591690, widgets:1 0:false
+10-03 11:28:10.503 i/AppCrawlerMain: {Screenshot} (91) apptest3.png
+10-03 11:28:10.504 i/AppCrawlerMain: {Click} Back
+10-03 11:28:11.391 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:93, depth:30, finished:false, signature:206030808, widgets:2 0:false 1:false
+10-03 11:28:11.885 i/AppCrawlerMain: {Screenshot} (92) apptest3.png
+10-03 11:28:11.886 i/AppCrawlerMain: {Click} Back
+10-03 11:28:12.645 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:94, depth:30, finished:false, signature:37027350, widgets:1 0:false
+10-03 11:28:13.228 i/AppCrawlerMain: {Screenshot} (93) apptest3.png
+10-03 11:28:13.229 i/AppCrawlerMain: {Click} Back
+10-03 11:28:14.083 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:95, depth:30, finished:false, signature:39684484, widgets:2 0:false 1:false
+10-03 11:28:14.603 i/AppCrawlerMain: {Screenshot} (94) apptest3.png
+10-03 11:28:14.604 i/AppCrawlerMain: {Click} Back
+10-03 11:28:15.903 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:96, depth:30, finished:false, signature:242935202, widgets:1 0:false
+10-03 11:28:16.168 i/AppCrawlerMain: {Screenshot} (95) apptest3.png
+10-03 11:28:16.169 i/AppCrawlerMain: {Click} Back
+10-03 11:28:17.006 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:97, depth:30, finished:false, signature:116111856, widgets:2 0:false 1:false
+10-03 11:28:17.525 i/AppCrawlerMain: {Screenshot} (96) apptest3.png
+10-03 11:28:17.527 i/AppCrawlerMain: {Click} Back
+10-03 11:28:18.355 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:98, depth:30, finished:false, signature:38124014, widgets:1 0:false
+10-03 11:28:18.887 i/AppCrawlerMain: {Screenshot} (97) apptest3.png
+10-03 11:28:18.888 i/AppCrawlerMain: {Click} Back
+10-03 11:28:19.769 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:99, depth:30, finished:false, signature:149587228, widgets:2 0:false 1:false
+10-03 11:28:20.266 i/AppCrawlerMain: {Screenshot} (98) apptest3.png
+10-03 11:28:20.267 i/AppCrawlerMain: {Click} Back
+10-03 11:28:21.064 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:100, depth:30, finished:false, signature:64456442, widgets:1 0:false
+10-03 11:28:21.626 i/AppCrawlerMain: {Screenshot} (99) apptest3.png
+10-03 11:28:21.627 i/AppCrawlerMain: {Click} Back
+10-03 11:28:22.394 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:101, depth:30, finished:false, signature:212391688, widgets:2 0:false 1:false
+10-03 11:28:22.986 i/AppCrawlerMain: {Screenshot} (100) apptest3.png
+10-03 11:28:22.987 i/AppCrawlerMain: {Click} Back
+10-03 11:28:23.793 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:102, depth:30, finished:false, signature:159848646, widgets:1 0:false
+10-03 11:28:24.365 i/AppCrawlerMain: {Screenshot} (101) apptest3.png
+10-03 11:28:24.367 i/AppCrawlerMain: {Click} Back
+10-03 11:28:25.209 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:103, depth:30, finished:false, signature:175659956, widgets:2 0:false 1:false
+10-03 11:28:25.727 i/AppCrawlerMain: {Screenshot} (102) apptest3.png
+10-03 11:28:25.728 i/AppCrawlerMain: {Click} Back
+10-03 11:28:26.534 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:104, depth:30, finished:false, signature:105642834, widgets:1 0:false
+10-03 11:28:27.082 i/AppCrawlerMain: {Screenshot} (103) apptest3.png
+10-03 11:28:27.083 i/AppCrawlerMain: {Click} Back
+10-03 11:28:27.960 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:105, depth:30, finished:false, signature:202997536, widgets:2 0:false 1:false
+10-03 11:28:28.447 i/AppCrawlerMain: {Screenshot} (104) apptest3.png
+10-03 11:28:28.448 i/AppCrawlerMain: {Click} Back
+10-03 11:28:29.257 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:106, depth:30, finished:false, signature:51018398, widgets:1 0:false
+10-03 11:28:29.786 i/AppCrawlerMain: {Screenshot} (105) apptest3.png
+10-03 11:28:29.788 i/AppCrawlerMain: {Click} Back
+10-03 11:28:30.576 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:107, depth:30, finished:false, signature:82275660, widgets:2 0:false 1:false
+10-03 11:28:31.147 i/AppCrawlerMain: {Screenshot} (106) apptest3.png
+10-03 11:28:31.148 i/AppCrawlerMain: {Click} Back
+10-03 11:28:31.940 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:108, depth:30, finished:false, signature:10461866, widgets:1 0:false
+10-03 11:28:32.501 i/AppCrawlerMain: {Screenshot} (107) apptest3.png
+10-03 11:28:32.503 i/AppCrawlerMain: {Click} Back
+10-03 11:28:33.881 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:109, depth:30, finished:false, signature:12849720, widgets:2 0:false 1:false
+10-03 11:28:34.148 i/AppCrawlerMain: {Screenshot} (108) apptest3.png
+10-03 11:28:34.149 i/AppCrawlerMain: {Click} Back
+10-03 11:28:34.948 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:110, depth:30, finished:false, signature:246234998, widgets:1 0:false
+10-03 11:28:35.504 i/AppCrawlerMain: {Screenshot} (109) apptest3.png
+10-03 11:28:35.505 i/AppCrawlerMain: {Click} Back
+10-03 11:28:36.905 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:111, depth:30, finished:false, signature:96737764, widgets:2 0:false 1:false
+10-03 11:28:37.164 i/AppCrawlerMain: {Screenshot} (110) apptest3.png
+10-03 11:28:37.165 i/AppCrawlerMain: {Click} Back
+10-03 11:28:37.866 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:112, depth:30, finished:false, signature:52813058, widgets:1 0:false
+10-03 11:28:38.524 i/AppCrawlerMain: {Screenshot} (111) apptest3.png
+10-03 11:28:38.525 i/AppCrawlerMain: {Click} Back
+10-03 11:28:39.294 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:113, depth:30, finished:false, signature:77262928, widgets:2 0:false 1:false
+10-03 11:28:39.866 i/AppCrawlerMain: {Screenshot} (112) apptest3.png
+10-03 11:28:39.867 i/AppCrawlerMain: {Click} Back
+10-03 11:28:40.671 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:114, depth:30, finished:false, signature:244893518, widgets:1 0:false
+10-03 11:28:41.207 i/AppCrawlerMain: {Screenshot} (113) apptest3.png
+10-03 11:28:41.208 i/AppCrawlerMain: {Click} Back
+10-03 11:28:42.587 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:115, depth:30, finished:false, signature:63357308, widgets:2 0:false 1:false
+10-03 11:28:42.845 i/AppCrawlerMain: {Screenshot} (114) apptest3.png
+10-03 11:28:42.846 i/AppCrawlerMain: {Click} Back
+10-03 11:28:43.663 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:116, depth:30, finished:false, signature:155060826, widgets:1 0:false
+10-03 11:28:44.186 i/AppCrawlerMain: {Screenshot} (115) apptest3.png
+10-03 11:28:44.188 i/AppCrawlerMain: {Click} Back
+10-03 11:28:44.990 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:117, depth:30, finished:false, signature:24934760, widgets:2 0:false 1:false
+10-03 11:28:45.525 i/AppCrawlerMain: {Screenshot} (116) apptest3.png
+10-03 11:28:45.526 i/AppCrawlerMain: {Click} Back
+10-03 11:28:46.896 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:118, depth:30, finished:false, signature:79852070, widgets:2 0:false 1:false
+10-03 11:28:47.181 i/AppCrawlerMain: {Screenshot} (117) apptest3.png
+10-03 11:28:47.182 i/AppCrawlerMain: {Click} Back
+10-03 11:28:47.976 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:119, depth:30, finished:false, signature:139707412, widgets:1 0:false
+10-03 11:28:48.546 i/AppCrawlerMain: {Screenshot} (118) apptest3.png
+10-03 11:28:48.547 i/AppCrawlerMain: {Click} Back
+10-03 11:28:48.935 i/AppCrawlerMain: {Inspect} screen, in other package: com.google.android.apps.nexuslauncher
+10-03 11:28:50.145 i/AppCrawlerMain: {Screenshot} (119) Home screen 1 of 2 (com.google.android.apps.nexuslauncher).png
+10-03 11:28:50.959 i/AppCrawlerMain: {Click} Back
+10-03 11:28:51.997 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest3
+10-03 11:28:53.116 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:121, depth:30, finished:false, signature:248744626, widgets:1 0:false
+10-03 11:28:53.345 i/AppCrawlerMain: {Screenshot} (120) apptest3.png
+10-03 11:28:53.454 i/AppCrawlerMain: {Click} NEXT Button [419,1693][661,1825]
+10-03 11:28:53.843 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest3, id:122, depth:2, finished:false, signature:45288832, widgets:2 0:false 1:false

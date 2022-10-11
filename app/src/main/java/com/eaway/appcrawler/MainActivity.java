@@ -1,31 +1,27 @@
 package com.eaway.appcrawler;
 
 import android.app.Activity;
-import android.bluetooth.le.ScanFilter;
 import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.SimpleAdapter;
+import android.widget.SimpleAdapter.ViewBinder;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
 
 public class MainActivity extends Activity {
 
@@ -38,7 +34,6 @@ public class MainActivity extends Activity {
     private static final String PKG_PREFIX_ANDROID = "com.android";
     private static final String PKG_PREFIX_GOOGLE = "com.google";
 
-    private EditText editText;
     private ListView mListView;
     private RadioButton mRadioBtnPackage;
     private RadioButton mRadioBtnName;
@@ -50,7 +45,6 @@ public class MainActivity extends Activity {
 
     public static List<PackageInfo> sPkgInfoList;
     public static List<TargetApp> sSelectedAppList;
-    private ArrayList<HashMap<String, Object>> appList;
 
 
     @Override
@@ -65,58 +59,44 @@ public class MainActivity extends Activity {
             e.printStackTrace();
         }
 
-        editText = (EditText) findViewById(R.id.search);
         mListView = (ListView) findViewById(R.id.appList);
         mRadioBtnPackage = (RadioButton) findViewById(R.id.radioPackage);
         mRadioBtnName = (RadioButton) findViewById(R.id.radioName);
         mCheckBoxHideAndroid = (CheckBox) findViewById(R.id.checkBoxHideAndroid);
         mCheckBoxHideGoogle = (CheckBox) findViewById(R.id.checkBoxHideGoogle);
 
-        appList = new ArrayList<>();
-
-        refreshAppListView(true);
-
-        editText.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                refreshAppListView(false);
-                    ((SimpleAdapter) mListView.getAdapter()).getFilter();
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
+        refreshAppListView();
     }
 
     public void onHideButtonClick(View view) {
-        refreshAppListView(true);
+        refreshAppListView();
     }
 
     public void onSortButtonClick(View view) {
         if (sPkgInfoList != null) {
             if (mRadioBtnPackage.isChecked()) {
-                sPkgInfoList.sort((p1, p2) -> p1.packageName.compareTo(p2.packageName));
+                Collections.sort(sPkgInfoList, new Comparator<PackageInfo>() {
+                    public int compare(PackageInfo p1, PackageInfo p2) {
+                        return p1.packageName.compareTo(p2.packageName);
+                    }
+                });
             } else {
-                sPkgInfoList.sort((p1, p2) ->
-                        ((String) p1.applicationInfo.loadLabel(mPkgMgr))
-                                .compareTo(((String) p2.applicationInfo.loadLabel(mPkgMgr))));
+                Collections.sort(sPkgInfoList, new Comparator<PackageInfo>() {
+                    public int compare(PackageInfo p1, PackageInfo p2) {
+                        String n1 = (String) p1.applicationInfo.loadLabel(mPkgMgr);
+                        String n2 = (String) p2.applicationInfo.loadLabel(mPkgMgr);
+                        return n1.compareTo(n2);
+                    }
+                });
             }
-            refreshAppListView(false);
+            refreshAppListView();
         }
     }
-
-
 
     public void onStartButtonClick(View view) {
 
         // Get selected app list
-        sSelectedAppList = new ArrayList<>();
+        sSelectedAppList = new ArrayList<TargetApp>();
         for (int i = 0; i < mListView.getChildCount(); i++) {
             LinearLayout itemLayout = (LinearLayout) mListView.getChildAt(i);
             CheckBox cb = (CheckBox) itemLayout.findViewById(R.id.checkBox);
@@ -132,14 +112,13 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
-    private boolean refreshAppListView(boolean force) {
-
-        if(!force && mPkgMgr.getInstalledPackages(0).size() == appList.size() - 1)
-            return refreshAppWithCriteria();
+    private boolean refreshAppListView() {
 
         // Get installed packages
-        appList.clear();
-        sPkgInfoList = mPkgMgr.getInstalledPackages(0);
+        ArrayList<HashMap<String, Object>> appList = new ArrayList<HashMap<String, Object>>();
+        if (sPkgInfoList == null) {
+            sPkgInfoList = mPkgMgr.getInstalledPackages(0);
+        }
 
         for (PackageInfo pkg : sPkgInfoList) {
 
@@ -159,18 +138,12 @@ public class MainActivity extends Activity {
                     continue;
             }
 
-            HashMap<String, Object> mapApp = new HashMap<>();
+            HashMap<String, Object> mapApp = new HashMap<String, Object>();
             mapApp.put(APP_PKG, pkg.packageName);
             mapApp.put(APP_NAME, pkg.applicationInfo.loadLabel(mPkgMgr));
             mapApp.put(APP_ICON, pkg.applicationInfo.loadIcon(mPkgMgr));
             appList.add(mapApp);
         }
-
-        return refreshAppWithCriteria();
-    }
-
-    private boolean refreshAppWithCriteria(){
-        String search = editText.getText().toString().toLowerCase();
 
         // Bind ListView with content adapter
         SimpleAdapter appAdapter = new SimpleAdapter(this, appList, R.layout.app_list_item,
@@ -181,32 +154,21 @@ public class MainActivity extends Activity {
                         R.id.appName, R.id.appPackage, R.id.appIcon
                 });
 
-        appAdapter.setViewBinder((view, data, textRepresentation) -> {
-            if (view instanceof ImageView && data instanceof Drawable) {
-                ImageView iv = (ImageView) view;
-                iv.setImageDrawable((Drawable) data);
-                return true;
+        appAdapter.setViewBinder(new ViewBinder() {
+            public boolean setViewValue(View view, Object data, String textRepresentation) {
+                if (view instanceof ImageView && data instanceof Drawable) {
+                    ImageView iv = (ImageView) view;
+                    iv.setImageDrawable((Drawable) data);
+                    return true;
+                }
+                else
+                    return false;
             }
-            else
-                return false;
         });
 
         mListView.setAdapter(appAdapter);
-        return true;
-    }
 
-    private ArrayList<HashMap<String, Object>> filter(){
-        ArrayList<HashMap<String, Object>> result = new ArrayList<>();
-        for(HashMap<String, Object> app : appList) {
-            if (!editText.getText().toString().equals("")) {
-                String appName = app.get(APP_NAME).toString().toLowerCase();
-                String text = editText.getText().toString().toLowerCase();
-                if (appName.contains(text))
-                    result.add(app);
-            }else
-                return appList;
-        }
-        return result;
+        return true;
     }
 
 }

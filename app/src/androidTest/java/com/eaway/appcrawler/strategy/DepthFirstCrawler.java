@@ -10,7 +10,9 @@ package com.eaway.appcrawler.strategy;
 import android.graphics.Rect;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.uiautomator.UiDevice;
+import android.support.test.uiautomator.UiObject;
 import android.support.test.uiautomator.UiObjectNotFoundException;
+import android.support.test.uiautomator.UiSelector;
 import android.util.Log;
 
 import com.eaway.appcrawler.Config;
@@ -20,6 +22,7 @@ import com.eaway.appcrawler.common.UiScreen;
 import com.eaway.appcrawler.common.UiWidget;
 import com.eaway.appcrawler.performance.PerformanceMonitor;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -31,6 +34,8 @@ public class DepthFirstCrawler extends Crawler {
     private static final String TAG = Config.TAG;
     private static final String TAG_MAIN = Config.TAG_MAIN;
     private static final String TAG_DEBUG = Config.TAG_DEBUG;
+
+    public static final String PERMISSION_MANAGER_PKG = "com.android.packageinstaller";
 
     private static int sDepth = 0; // root screen depth = 0
     private static int sSteps = 0;
@@ -116,6 +121,7 @@ public class DepthFirstCrawler extends Crawler {
             if (!currentScreen.isFinished()) {
                 UiScreen screen = currentScreen;
                 do {
+                    Log.d(TAG_DEBUG, String.format("Marking Screen %s with depth %d and signature %s as not finished", screen.name, screen.depth, screen.signature));
                     if (screen.parentWidget != null)
                         screen.parentWidget.setFinished(false);
                     if (screen.parentScreen != null)
@@ -212,7 +218,40 @@ public class DepthFirstCrawler extends Crawler {
         FileLog.i(TAG_MAIN, log);
     }
 
+    public void handlePermission(UiScreen currentScreen) {
+        FileLog.i(TAG_MAIN, "{PM} requesting permissions!");
+        // mDevice.takeScreenshot(new File(Config.sOutputDir + "/" + currentScreen.name + ".png"));
+        UiHelper.takeScreenshots(currentScreen.name);
+        for (int i = 0 ;; i++){
+            UiObject uiObject = currentScreen.device.findObject(new UiSelector().clickable(true).instance(i));
+            if(!uiObject.exists()) break;
+            try {
+                Log.d(TAG, String.format("{PM} Ui Name: %s", uiObject.getText()));
+                if(isDeny(uiObject.getText())){
+                    uiObject.click();
+                    FileLog.i(TAG_MAIN, "{PM} Permission Denied!");
+                    return;
+                }
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private boolean isDeny(String text){
+        for(String s : Config.DENY_TEXT){
+            if (s.equalsIgnoreCase(text))
+                return true;
+        }
+        return false;
+    }
+
     public void handleOtherPackage(UiScreen currentScreen) {
+        if(PERMISSION_MANAGER_PKG.compareToIgnoreCase(currentScreen.pkg) == 0) {
+            handlePermission(currentScreen);
+            return;
+        }
+        FileLog.v(TAG, String.format("{Other package} %s", currentScreen.pkg));
         if (isNewScreen(currentScreen)) {
             UiHelper.takeScreenshots("(" + currentScreen.pkg + ")");
             currentScreen.widgetList.clear();
@@ -259,10 +298,12 @@ public class DepthFirstCrawler extends Crawler {
         }
 
         if (stop) {
+            Log.d(TAG_DEBUG, String.format("Stop in New Screen %s with signature %s", currentScreen.name, currentScreen.signature));
             currentScreen.widgetList.clear();
             currentScreen.setFinished(true);
             sScannedScreenList.add(currentScreen);
             FileLog.i(TAG_MAIN, "{Click} Back");
+            // FIXME: Test if remove the pressback does something
             mDevice.pressBack(); // Not sure that we can always go back to previous page by back key
             mDevice.waitForIdle(Config.sWaitIdleTimeout);
         } else {

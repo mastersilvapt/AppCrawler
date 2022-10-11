@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.notNullValue;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -52,7 +53,7 @@ public class UiScreen {
     }
 
     public void init(UiScreen parent, UiWidget widget, UiObject root) {
-        assertThat(root, notNullValue());
+        assertThat(root, notNullValue()); // assertNotNull(root);
 
         device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         parentScreen = parent;
@@ -91,14 +92,15 @@ public class UiScreen {
         conf.setActionAcknowledgmentTimeout(ActionAcknowledgmentTimeout);
         conf.setScrollAcknowledgmentTimeout(ScrollAcknowledgmentTimeout);
 
-        if (pkg == null || 0 != pkg.compareToIgnoreCase(Config.sTargetPackage)) { // Added pkg == null ||
+        if (0 != pkg.compareToIgnoreCase(Config.sTargetPackage)) {
             return;
         }
 
         // Clickable
         int i = 0;
-        UiObject clickable;
+        UiObject clickable = null;
         do {
+            clickable = null;
             clickable = device.findObject(new UiSelector().clickable(true).instance(i++));
             if (clickable != null && clickable.exists())
                 widgetList.add(new UiWidget(clickable));
@@ -123,17 +125,18 @@ public class UiScreen {
 
     @Override
     public String toString() {
-        StringBuilder str = new StringBuilder("name:" + name +
+        // FIXME: Better to use StringBuilder
+        String str = "name:" + name +
                 ", id:" + id +
                 ", depth:" + depth +
                 ", finished:" + mFinished +
                 ", signature:" + signature +
-                ", widgets:" + widgetList.size());
+                ", widgets:" + widgetList.size();
         for (int i = 0; i < widgetList.size(); i++) {
             UiWidget widget = widgetList.get(i);
-            str.append(" ").append(i).append(":").append(widget.isFinished());
+            str += " " + i + ":" + widget.isFinished();
         }
-        return str.toString();
+        return str;
     }
 
     @Override
@@ -174,8 +177,9 @@ public class UiScreen {
         return true;
     }
 
+    // Can't use hashCode bc each screen has one diff on open
     private boolean parseSignature(UiObject uiObject) {
-        //Log.v(TAG, new Exception().getStackTrace()[0].getMethodName() + "()");
+        Log.v(TAG, new Exception().getStackTrace()[0].getMethodName() + "()");
         if ((uiObject == null) || !uiObject.exists())
             return false;
 

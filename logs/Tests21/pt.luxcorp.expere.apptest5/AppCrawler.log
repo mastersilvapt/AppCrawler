@@ -1,0 +1,24 @@
+10-03 19:14:00.777 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 19:14:00.781 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 19:14:00.782 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest5, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 19:14:00.811 i/AppCrawlerMain: {Press} Home
+10-03 19:14:00.944 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest5
+10-03 19:14:07.545 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:false 1:false 2:false 3:false
+10-03 19:14:07.897 i/AppCrawlerMain: {Screenshot} (0) apptest5.png
+10-03 19:14:07.900 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 19:14:08.023 i/AppCrawlerMain: {Click} MAIN2 Button [78,665][320,797]
+10-03 19:14:08.586 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:14:08.590 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:14:08.593 w/AppCrawler: android.support.test.uiautomator.UiObject@5b68909
+10-03 19:14:08.595 w/AppCrawler: android.support.test.uiautomator.UiObject@26f470e
+10-03 19:14:08.598 w/AppCrawler: android.support.test.uiautomator.UiObject@3dbb52f
+10-03 19:14:08.889 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:14:08.894 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:14:08.898 w/AppCrawler: android.support.test.uiautomator.UiObject@71aa73c
+10-03 19:14:08.902 w/AppCrawler: android.support.test.uiautomator.UiObject@9b5acc5
+10-03 19:14:08.905 w/AppCrawler: android.support.test.uiautomator.UiObject@25cc61a
+10-03 19:14:09.182 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:14:09.186 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:14:09.189 w/AppCrawler: android.support.test.uiautomator.UiObject@7f8754b
+10-03 19:14:09.192 w/AppCrawler: android.support.test.uiautomator.UiObject@b88fb28
+10-03 19:14:09.194 w/AppCrawler: android.support.test.uiautomator.UiObject@ec95041

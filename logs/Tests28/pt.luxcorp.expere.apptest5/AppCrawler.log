@@ -1,0 +1,31 @@
+10-03 19:37:49.728 i/AppCrawlerMain: Version: 1.0.0.0
+10-03 19:37:49.732 i/AppCrawlerMain: ActionAcknowledgmentTimeout:200, KeyInjectionDelay:0, ScrollAcknowledgmentTimeout:100, WaitForIdleTimeout:0, WaitForSelectorTimeout:0
+10-03 19:37:49.734 i/AppCrawlerMain: TargetPackage: pt.luxcorp.expere.apptest5, Debug: true, MaxSteps: 999, MaxDepth: 30, MaxRuntime: 3600, MaxScreenshot: 999, MaxScreenLoop: 20, ScreenSignatueLength: 160, RandomText: true, CaptureSteps: false, LaunchTimeout: 5000, WaitIdleTimeout: 100
+10-03 19:37:49.754 i/AppCrawlerMain: {Press} Home
+10-03 19:37:49.926 i/AppCrawlerMain: {Launch} pt.luxcorp.expere.apptest5
+10-03 19:37:55.521 i/AppCrawlerMain: {Inspect} NEW screen, name:apptest5, id:1, depth:0, finished:false, signature:FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button;, widgets:4 0:false 1:false 2:false 3:false
+10-03 19:37:55.874 i/AppCrawlerMain: {Screenshot} (0) apptest5.png
+10-03 19:37:55.877 d/AppCrawlerDebug: Marking Screen apptest5 with depth 1 and signature FrameLayout;LinearLayout;FrameLayout;ViewGroup;FrameLayout;ViewGroup;TextView;FrameLayout;ViewGroup;Button;Button;TextView;Button;Button; as not finished
+10-03 19:37:55.996 i/AppCrawlerMain: {Click} MAIN2 Button [78,665][320,797]
+10-03 19:37:56.515 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:37:56.518 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:37:56.613 d/AppCrawler: Name: , Desc: 
+10-03 19:37:56.715 d/AppCrawler: Name: , Desc: 
+10-03 19:37:56.816 d/AppCrawler: Name: , Desc: 
+10-03 19:37:56.901 d/AppCrawler: Name: , Desc: 
+10-03 19:37:56.983 d/AppCrawler: Name: Allow apptest5 to access photos, media, and files on your device?, Desc: 
+10-03 19:37:57.004 d/AppCrawler: Name: Don't ask again, Desc: 
+10-03 19:37:57.103 d/AppCrawler: Name: , Desc: 
+10-03 19:37:57.126 d/AppCrawler: Name: Allow, Desc: 
+10-03 19:37:57.416 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:37:57.420 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
+10-03 19:37:57.498 d/AppCrawler: Name: , Desc: 
+10-03 19:37:57.569 d/AppCrawler: Name: , Desc: 
+10-03 19:37:57.644 d/AppCrawler: Name: , Desc: 
+10-03 19:37:57.712 d/AppCrawler: Name: , Desc: 
+10-03 19:37:57.792 d/AppCrawler: Name: Allow apptest5 to access photos, media, and files on your device?, Desc: 
+10-03 19:37:57.859 d/AppCrawler: Name: Don't ask again, Desc: 
+10-03 19:37:58.014 d/AppCrawler: Name: , Desc: 
+10-03 19:37:58.053 d/AppCrawler: Name: Allow, Desc: 
+10-03 19:37:58.358 i/AppCrawlerMain: {Inspect} screen, in other package: com.android.packageinstaller
+10-03 19:37:58.363 v/AppCrawler: {Permission Manager} requesting permissions com.android.packageinstaller
