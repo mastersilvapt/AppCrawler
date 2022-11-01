@@ -223,4 +223,6 @@ public class UiHelper {
         FileLog.i(TAG_MAIN, "{Screenshot} " + sLastFilename);
     }
 
+
+
 }

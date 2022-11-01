@@ -27,6 +27,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import pt.mastersilvapt.expere.Tree;
+
 /**
  * AppCrawler test using Android UiAutomator 2.0
  */
@@ -49,6 +51,7 @@ public class DepthFirstCrawler extends Crawler {
     private static String sLastActionMessage = new String("");
     private static boolean sFinished = false;
     private UiDevice mDevice;
+    private Tree<String> tree;
 
     @Override
     public void run() {
@@ -63,10 +66,36 @@ public class DepthFirstCrawler extends Crawler {
         sLastActionMessage = new String("");
         sFinished = false;
         mDevice = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-
+        tree = new Tree<>();
         // Start from main activity
         if (!UiHelper.launchTargetApp())
             return;
+
+//        Thread t = new Thread(() -> {
+//            try{
+//                Thread.sleep(5000);
+//                String command = String.format("logcat -c --pid=$(pidof -s %s)", Config.sTargetPackage);
+//                // String command = String.format("pidof -s %s", Config.sTargetPackage);
+//                // FileLog.v(TAG, command);
+//                Process p = Runtime.getRuntime().exec(command);
+//                BufferedReader bis = new BufferedReader(new InputStreamReader(p.getInputStream()));
+//                BufferedReader bisErr = new BufferedReader(new InputStreamReader(p.getErrorStream()));
+//                String line;
+//                while((line = bis.readLine()) != null){
+//                    FileLog.i(TAG, String.format("%s: %s", Config.sTargetPackage, line));
+//                }
+//                bis.close();
+//                while((line = bisErr.readLine()) != null){
+//                    FileLog.i(TAG, String.format("%s ERR: %s", Config.sTargetPackage, line));
+//                }
+//                bisErr.close();
+//                FileLog.i(TAG, "ExitValue: " + p.exitValue());
+//            }catch (Exception e){
+//                FileLog.e(TAG, "handleCrash4");
+//            }
+//        });
+//        t.setName("Thread Minha");
+//        t.start();
 
         while (!sFinished) {
             sSteps++;
@@ -102,6 +131,18 @@ public class DepthFirstCrawler extends Crawler {
 
             // New screen?
             if (newScreen) {
+                tree.addNode(currentScreen.signature, currentScreen.id, currentScreen.depth);
+                String action = "";
+                try{
+                    if(currentScreen.parentWidget != null && currentScreen.parentWidget.uiObject.exists())
+                        action = currentScreen.parentWidget.uiObject.getText();
+                }catch (UiObjectNotFoundException e){
+                    FileLog.e(TAG, e.getMessage());
+                }
+                if(currentScreen.parentScreen == null)
+                    tree.addChild(null, currentScreen.signature, action);
+                else
+                    tree.addChild(currentScreen.parentScreen.signature, currentScreen.signature, action);
                 handleNewScreen(currentScreen);
                 sLoop = 0;
             } else {
@@ -205,6 +246,13 @@ public class DepthFirstCrawler extends Crawler {
             }
         }
 
+        try {
+            tree.serialize(new File(Config.sOutputDir, "tree.ser").getAbsolutePath());
+            tree.serializeToJson(new File(Config.sOutputDir, "tree.json").getAbsolutePath());
+        }catch (Exception e){
+            e.printStackTrace();
+            FileLog.e(TAG, e.getMessage());
+        }
         // Done
         FileLog.i(TAG_MAIN, "Total executed steps:" + sSteps +
                 ", peak depth:" + sDepthPeak +
@@ -216,12 +264,16 @@ public class DepthFirstCrawler extends Crawler {
                 PerformanceMonitor.getAverageCpu(), PerformanceMonitor.cpuPeak,
                 PerformanceMonitor.getAverageMemory(), PerformanceMonitor.memPeak);
         FileLog.i(TAG_MAIN, log);
+
     }
 
+    // Add info to node that permission was requested for post ExPeRe add permission name
     public void handlePermission(UiScreen currentScreen) {
         FileLog.i(TAG_MAIN, "{PM} requesting permissions!");
+        tree.permissionRequest(currentScreen.parentScreen.signature);
         // mDevice.takeScreenshot(new File(Config.sOutputDir + "/" + currentScreen.name + ".png"));
         UiHelper.takeScreenshots(currentScreen.name);
+        screenshotToTreeNode(currentScreen);
         for (int i = 0 ;; i++){
             UiObject uiObject = currentScreen.device.findObject(new UiSelector().clickable(true).instance(i));
             if(!uiObject.exists()) break;
@@ -238,6 +290,14 @@ public class DepthFirstCrawler extends Crawler {
         }
     }
 
+    private void screenshotToTreeNode(UiScreen currentScreen) {
+        UiScreen screen = currentScreen;
+        while (screen != null && !screen.pkg.equals(Config.sTargetPackage))
+            screen = screen.parentScreen;
+        if(screen != null)
+            tree.addScreenshot(screen.signature, UiHelper.sLastFilename);
+    }
+
     private boolean isDeny(String text){
         for(String s : Config.DENY_TEXT){
             if (s.equalsIgnoreCase(text))
@@ -251,9 +311,10 @@ public class DepthFirstCrawler extends Crawler {
             handlePermission(currentScreen);
             return;
         }
-        FileLog.v(TAG, String.format("{Other package} %s", currentScreen.pkg));
+        FileLog.i(TAG, String.format("{Other package} %s", currentScreen.pkg));
         if (isNewScreen(currentScreen)) {
             UiHelper.takeScreenshots("(" + currentScreen.pkg + ")");
+            screenshotToTreeNode(currentScreen);
             currentScreen.widgetList.clear();
             currentScreen.setFinished(true);
             sScannedScreenList.add(currentScreen);
@@ -282,6 +343,7 @@ public class DepthFirstCrawler extends Crawler {
         sLastActionMessage = "";
         sLastActionWidget = null;
         UiHelper.takeScreenshots("");
+        screenshotToTreeNode(currentScreen);
 
         currentScreen.depth = ++sDepth;
         if (sDepth > sDepthPeak)
@@ -316,6 +378,7 @@ public class DepthFirstCrawler extends Crawler {
         FileLog.i(TAG_MAIN, "{Inspect} OLD screen, " + currentScreen.toString());
         if (Config.sCaptureSteps) {
             UiHelper.takeScreenshots(sLastActionMessage);
+            screenshotToTreeNode(currentScreen);
             sLastActionMessage = "";
             sLastActionWidget = null;
         }

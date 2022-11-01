@@ -17,6 +17,7 @@
 
 package com.eaway.appcrawler.common;
 
+import android.arch.lifecycle.LiveData;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.uiautomator.UiDevice;
 import android.support.test.uiautomator.UiObject;
@@ -27,10 +28,17 @@ import android.util.Log;
 
 import com.eaway.appcrawler.Config;
 import com.eaway.appcrawler.FileLog;
+import com.eaway.appcrawler.performance.CpuInfo;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Locale;
 
 public class UiWatchers {
     private static final String TAG = Config.TAG;
@@ -56,6 +64,8 @@ public class UiWatchers {
 
         sDevice.registerWatcher("CRASH2", this::handleCrash2);
 
+        sDevice.registerWatcher("CRASH3", this::handleCrash3);
+
         //sDevice.registerWatcher("COMMONDIALOG", new UiWatcher() {
         //    @Override
         //    public boolean checkForCondition() {
@@ -63,7 +73,8 @@ public class UiWatchers {
         //    }
         //});
 
-        Log.i(TAG, "Registed GUI Exception watchers");
+        FileLog.i(TAG, "Registed GUI Exception watchers");
+
     }
 
     public boolean handleAnr() {
@@ -107,6 +118,7 @@ public class UiWatchers {
     public boolean handleCrash() {
         UiObject window = sDevice.findObject(new UiSelector()
                 .className("com.android.server.am.AppErrorDialog"));
+        // FileLog.e(TAG, "Crash");
         if (window.exists()) {
             String errorText = null;
             try {
@@ -143,6 +155,24 @@ public class UiWatchers {
         return false; // no trigger
     }
 
+    public boolean handleCrash3() {
+        UiObject window = sDevice.findObject(new UiSelector().packageName("android")
+                .textContains("keeps stopping"));
+        if (window.exists()) {
+            String errorText = null;
+            try {
+                errorText = window.getText();
+            } catch (UiObjectNotFoundException e) {
+                Log.e(TAG, "dialog gone?", e);
+            }
+            UiHelper.takeScreenshots("[CRASH]");
+            onCrashDetected(errorText);
+            postHandler();
+            return true; // triggered
+        }
+        return false; // no trigger
+    }
+
     public void onAnrDetected(String errorText) {
         mErrors.add(errorText);
     }
@@ -164,14 +194,16 @@ public class UiWatchers {
      */
     public void postHandler() {
         // TODO: Add custom error logging here
-        FileLog.e(TAG, "{CRASH}");
-        String formatedOutput = String.format("UI Exception Message: %-20s\n",
+        String formatedOutput = String.format("{CRASH} UI Exception Message: %-20s",
                 sDevice.getCurrentPackageName());
-        Log.e(TAG, formatedOutput);
+        FileLog.e(TAG, formatedOutput);
 
         UiObject buttonOK = sDevice.findObject(new UiSelector().text("OK").enabled(true));
         if (!buttonOK.exists()) {
             buttonOK = sDevice.findObject(new UiSelector().text("確定").enabled(true));
+        }
+        if(!buttonOK.exists()){
+            buttonOK = sDevice.findObject(new UiSelector().text("Close app").enabled(true));
         }
 
         try {
