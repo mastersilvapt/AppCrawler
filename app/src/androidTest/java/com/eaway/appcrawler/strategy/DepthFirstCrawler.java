@@ -7,6 +7,8 @@
 
 package com.eaway.appcrawler.strategy;
 
+import static com.eaway.appcrawler.Config.sOutputDir;
+
 import android.graphics.Rect;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.uiautomator.UiDevice;
@@ -23,6 +25,7 @@ import com.eaway.appcrawler.common.UiWidget;
 import com.eaway.appcrawler.performance.PerformanceMonitor;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -104,6 +107,12 @@ public class DepthFirstCrawler extends Crawler {
             UiScreen currentScreen = new UiScreen(sLastScreen, sLastActionWidget);
             currentScreen.id = sScannedScreenList.size() + 1;
 
+            try {
+                currentScreen.device.dumpWindowHierarchy(new File(sOutputDir + "/" + currentScreen.id));
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+
             // In other package
             if (currentScreen.pkg.compareTo(Config.sTargetPackage) != 0) {
                 FileLog.i(TAG_MAIN, "{Inspect} screen, in other package: " + currentScreen.pkg);
@@ -135,7 +144,7 @@ public class DepthFirstCrawler extends Crawler {
                 String action = "";
                 try{
                     if(currentScreen.parentWidget != null && currentScreen.parentWidget.uiObject.exists())
-                        action = currentScreen.parentWidget.uiObject.getText();
+                        action = currentScreen.parentWidget.uiObject.getText().replaceAll("\\r\\n|\\r|\\n", " ");
                 }catch (UiObjectNotFoundException e){
                     FileLog.e(TAG, e.getMessage());
                 }

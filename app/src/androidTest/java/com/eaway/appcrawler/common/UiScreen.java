@@ -1,6 +1,8 @@
 package com.eaway.appcrawler.common;
 
 
+import static com.eaway.appcrawler.Config.sOutputDir;
+
 import android.support.test.InstrumentationRegistry;
 import android.support.test.uiautomator.Configurator;
 import android.support.test.uiautomator.UiDevice;
@@ -11,11 +13,12 @@ import android.util.Log;
 
 import com.eaway.appcrawler.Config;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -54,7 +57,6 @@ public class UiScreen {
 
     public void init(UiScreen parent, UiWidget widget, UiObject root) {
         assertThat(root, notNullValue()); // assertNotNull(root);
-
         device = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         parentScreen = parent;
         parentWidget = widget;
