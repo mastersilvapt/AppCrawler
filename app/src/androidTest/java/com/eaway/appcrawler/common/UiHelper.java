@@ -127,16 +127,11 @@ public class UiHelper {
             return false;
         }
         UiScreen current = new UiScreen(null, null, root);
-        boolean result = current.equals(target);
-        return result;
+        return current.signature != null && current.equals(target);
     }
 
     public static boolean launchTargetApp() {
-        if (launchApp(Config.sTargetPackage)) {
-            return true;
-        }
-
-        return false;
+        return launchApp(Config.sTargetPackage);
     }
 
     public static void launchCrawlerApp() {

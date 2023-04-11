@@ -7,8 +7,13 @@
 
 package com.eaway.appcrawler.strategy;
 
+import static com.eaway.appcrawler.Config.COMMAND_GET_ACTIVITY;
 import static com.eaway.appcrawler.Config.sOutputDir;
+import static com.eaway.appcrawler.Config.sTargetPackage;
 
+import android.content.pm.ActivityInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Rect;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.uiautomator.UiDevice;
@@ -24,13 +29,22 @@ import com.eaway.appcrawler.common.UiScreen;
 import com.eaway.appcrawler.common.UiWidget;
 import com.eaway.appcrawler.performance.PerformanceMonitor;
 
+import java.io.BufferedOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import pt.mastersilvapt.expere.Tree;
+import pt.luxcorp.asilva.expere.Tree;
 
 /**
  * AppCrawler test using Android UiAutomator 2.0
@@ -54,7 +68,11 @@ public class DepthFirstCrawler extends Crawler {
     private static String sLastActionMessage = new String("");
     private static boolean sFinished = false;
     private UiDevice mDevice;
+
+    private PackageManager packageManager;
     private Tree<String> tree;
+
+    private Map<Integer, String> dump;
 
     @Override
     public void run() {
@@ -66,10 +84,12 @@ public class DepthFirstCrawler extends Crawler {
         sRootScreen = null;
         sLastScreen = null;
         sLastActionWidget = null;
-        sLastActionMessage = new String("");
+        sLastActionMessage = "";
         sFinished = false;
+        dump = new HashMap<>();
         mDevice = UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-        tree = new Tree<>();
+        tree = new Tree<>("");
+        packageManager = InstrumentationRegistry.getInstrumentation().getContext().getPackageManager();
         // Start from main activity
         if (!UiHelper.launchTargetApp())
             return;
@@ -100,6 +120,18 @@ public class DepthFirstCrawler extends Crawler {
 //        t.setName("Thread Minha");
 //        t.start();
 
+        try {
+            PackageInfo packageInfo = packageManager.getPackageInfo(sTargetPackage, PackageManager.GET_ACTIVITIES);
+            BufferedOutputStream file = new BufferedOutputStream(Files.newOutputStream(Paths.get(sOutputDir + "/" + "activities")));
+            for (ActivityInfo activity : packageInfo.activities){
+                    file.write((activity.toString() + "\n").getBytes(StandardCharsets.UTF_8));
+            }
+            file.close();
+        } catch (PackageManager.NameNotFoundException | IOException e) {
+            e.printStackTrace();
+        }
+
+
         while (!sFinished) {
             sSteps++;
 
@@ -113,10 +145,28 @@ public class DepthFirstCrawler extends Crawler {
                 e.printStackTrace();
             }
 
+            try{
+                Process su = Runtime.getRuntime().exec(COMMAND_GET_ACTIVITY);
+
+                DataOutputStream outputStream = new DataOutputStream(su.getOutputStream());
+                DataInputStream inputStream = new DataInputStream(su.getInputStream());
+                outputStream.writeBytes("exit\n");
+                outputStream.flush();
+                su.waitFor();
+                byte[] bytes = new byte[inputStream.available()];
+                inputStream.read(bytes, 0 , bytes.length);
+                String res = new String(bytes, StandardCharsets.UTF_8);
+                FileLog.d("ACTIVITY COMMAND INFO", String.format("Exit: %d | Output: %s", su.exitValue(), res));
+                dump.put(currentScreen.id, res);
+
+            }catch (IOException | InterruptedException e){
+                e.printStackTrace();
+            }
+
             // In other package
-            if (currentScreen.pkg.compareTo(Config.sTargetPackage) != 0) {
+            if (currentScreen.pkg.compareTo(sTargetPackage) != 0) {
                 FileLog.i(TAG_MAIN, "{Inspect} screen, in other package: " + currentScreen.pkg);
-                handleOtherPackage(currentScreen);
+                handleNonRelevantScreen(currentScreen);
                 continue;
             }
 
@@ -140,7 +190,7 @@ public class DepthFirstCrawler extends Crawler {
 
             // New screen?
             if (newScreen) {
-                tree.addNode(currentScreen.signature, currentScreen.id, currentScreen.depth);
+                tree.addNode(currentScreen.signature, currentScreen.depth);
                 String action = "";
                 try{
                     if(currentScreen.parentWidget != null && currentScreen.parentWidget.uiObject.exists())
@@ -255,6 +305,14 @@ public class DepthFirstCrawler extends Crawler {
             }
         }
 
+        for(Map.Entry<Integer, String> val : dump.entrySet()) {
+            try(FileOutputStream fos = new FileOutputStream(sOutputDir + "/" + val.getKey() + "_activity")) {
+                fos.write(val.getValue().getBytes(StandardCharsets.UTF_8));
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+        }
+
         try {
             tree.serialize(new File(Config.sOutputDir, "tree.ser").getAbsolutePath());
             tree.serializeToJson(new File(Config.sOutputDir, "tree.json").getAbsolutePath());
@@ -301,10 +359,14 @@ public class DepthFirstCrawler extends Crawler {
 
     private void screenshotToTreeNode(UiScreen currentScreen) {
         UiScreen screen = currentScreen;
-        while (screen != null && !screen.pkg.equals(Config.sTargetPackage))
+        while (screen != null && !screen.pkg.equals(sTargetPackage))
             screen = screen.parentScreen;
         if(screen != null)
-            tree.addScreenshot(screen.signature, UiHelper.sLastFilename);
+            try {
+                tree.addScreenshot(screen.signature, UiHelper.sLastFilename);
+            }catch (NullPointerException e){
+                e.printStackTrace();
+            }
     }
 
     private boolean isDeny(String text){
@@ -315,7 +377,7 @@ public class DepthFirstCrawler extends Crawler {
         return false;
     }
 
-    public void handleOtherPackage(UiScreen currentScreen) {
+    public void handleNonRelevantScreen(UiScreen currentScreen) {
         if(PERMISSION_MANAGER_PKG.compareToIgnoreCase(currentScreen.pkg) == 0) {
             handlePermission(currentScreen);
             return;
@@ -461,7 +523,7 @@ public class DepthFirstCrawler extends Crawler {
 
     public boolean isNewTargetPkgScreen() {
         UiScreen currentScreen = new UiScreen(null, null);
-        if (0 != currentScreen.pkg.compareToIgnoreCase(Config.sTargetPackage))
+        if (0 != currentScreen.pkg.compareToIgnoreCase(sTargetPackage))
             return false;
         return isNewScreen(currentScreen);
     }

@@ -30,8 +30,10 @@ public class Config {
 
     public static String sCrawlerPackage = "com.eaway.appcrawler";
     // public static String sTargetPackage = "com.google.android.youtube";
-    public static String sTargetPackage = "pt.luxcorp.expere.apptest5";
+    /// public static String sTargetPackage = "pt.luxcorp.expere.apptest5";
+    public static String sTargetPackage = "com.video.playnow";
 
+    public static final String COMMAND_GET_ACTIVITY = String.format("su -c dumpsys activity %s | grep ACTIVITY\n", sTargetPackage);
 
     // Activities to be ignored
     public static final String[] IGNORED_ACTIVITY = {
